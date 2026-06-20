@@ -1,0 +1,128 @@
+[
+  {
+    "id": "early_christianity",
+    "start": 30,
+    "end": 100,
+    "title": "Oorsprong en vroege verspreiding van het christendom",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "paul_missions",
+    "start": 45,
+    "end": 65,
+    "title": "Missionaire reizen van Paulus",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "rome_church_growth",
+    "start": 90,
+    "end": 100,
+    "title": "Groei van de kerk in Rome",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "rome_constantinople_tension",
+    "start": 200,
+    "end": 700,
+    "title": "Spanningen tussen Rome en Constantinopel",
+    "group": "Late Oudheid"
+  },
+  {
+    "id": "theological_centers",
+    "start": 150,
+    "end": 500,
+    "title": "Opkomst van theologische centra: Alexandrië, Antiochië, Rome",
+    "group": "Theologie"
+  },
+  {
+    "id": "alexandria_school",
+    "start": 150,
+    "end": 450,
+    "title": "Opkomst van de Alexandrijnse theologische school",
+    "group": "Theologie"
+  },
+  {
+    "id": "antioch_school",
+    "start": 100,
+    "end": 500,
+    "title": "Ontwikkeling van de Antiocheense theologische school",
+    "group": "Theologie"
+  },
+  {
+    "id": "north_africa_fathers",
+    "start": 150,
+    "end": 430,
+    "title": "Latijnse kerkvaders in Noord‑Afrika",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "patristic_period",
+    "start": 100,
+    "end": 451,
+    "title": "De tijd van de kerkvaders",
+    "group": "Kerkgeschiedenis"
+  },
+  {
+    "id": "patristic_studies",
+    "start": 1900,
+    "end": 2025,
+    "title": "Ontwikkeling van patristiek en patrologie als wetenschappen",
+    "group": "Moderne studie"
+  },
+  {
+    "id": "andrewes_statement",
+    "start": 1555,
+    "end": 1626,
+    "title": "Lancelot Andrewes en de waardering van de eerste vijf eeuwen",
+    "group": "Anglicaanse traditie"
+  },
+  {
+    "id": "jewish_christian_relations",
+    "start": 50,
+    "end": 70,
+    "title": "Discussie over verhouding christendom en jodendom",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "apologetics_2nd_century",
+    "start": 100,
+    "end": 200,
+    "title": "Opkomst van de apologetiek",
+    "group": "Theologie"
+  },
+  {
+    "id": "early_theologians",
+    "start": 130,
+    "end": 254,
+    "title": "Irenaeus en Origenes",
+    "group": "Theologie"
+  },
+  {
+    "id": "constantine_conversion",
+    "start": 306,
+    "end": 337,
+    "title": "Bekering en regering van Constantijn",
+    "group": "Kerk en Rijk"
+  },
+  {
+    "id": "constantine_sunday_law",
+    "start": 321,
+    "end": 321,
+    "title": "Constantijn verklaart zondag tot feestdag",
+    "group": "Kerk en Rijk"
+  },
+  {
+    "id": "late_patristic_peak",
+    "start": 310,
+    "end": 451,
+    "title": "Hoogtepunt van de patristische theologie",
+    "group": "Dogmatiek"
+  },
+  {
+    "id": "patristic_difficulties",
+    "start": 1900,
+    "end": 2025,
+    "title": "Moderne uitdagingen bij studie van patristiek",
+    "group": "Moderne studie"
+  }
+]

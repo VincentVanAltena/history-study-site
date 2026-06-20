@@ -1,0 +1,253 @@
+[
+  {
+    "question": "Waar vond het christendom zijn oorsprong?",
+    "answer": "Palestina, vooral Jeruzalem",
+    "location": [31.778, 35.235],
+    "timelineId": "early_christianity",
+    "mapLayer": "palestine_1st_century",
+    "context": {
+      "causes": ["Joodse religieuze traditie", "Prediking van Jezus en zijn volgelingen"],
+      "effects": ["Ontstaan van christelijke gemeenschappen", "Verspreiding naar omliggende regio's"],
+      "themes": ["religie", "cultuur", "identiteit"],
+      "period": "1e eeuw"
+    }
+  },
+  {
+    "question": "Welke apostel speelde een belangrijke rol in de vroege verspreiding van het christendom?",
+    "answer": "Paulus van Tarsus",
+    "location": [36.917, 34.892],
+    "timelineId": "paul_missions",
+    "mapLayer": "pauline_routes",
+    "context": {
+      "causes": ["Bekering van Paulus", "Missionaire reizen"],
+      "effects": ["Stichting van gemeenten in Klein-Azië en Griekenland", "Theologische ontwikkeling"],
+      "themes": ["missie", "theologie", "religieuze expansie"],
+      "period": "ca. 40–65"
+    }
+  },
+  {
+    "question": "In welke stad werd het christendom bijzonder krachtig tegen het einde van de eerste eeuw?",
+    "answer": "Rome",
+    "location": [41.9028, 12.4964],
+    "timelineId": "rome_church_growth",
+    "mapLayer": "roman_empire",
+    "context": {
+      "causes": ["Migratie van christenen", "Missionaire activiteit"],
+      "effects": ["Opkomst van de bisschop van Rome", "Latere machtsconflicten met Constantinopel"],
+      "themes": ["kerkstructuur", "politiek", "macht"],
+      "period": "ca. 90–100"
+    }
+  },
+  {
+    "question": "Welke twee steden vormden later de machtscentra van de westerse en oosterse kerk?",
+    "answer": "Rome en Constantinopel",
+    "location": [41.0082, 28.9784],
+    "timelineId": "rome_constantinople_tension",
+    "mapLayer": "late_antiquity_centers",
+    "context": {
+      "causes": ["Groei van de kerk in beide steden", "Culturele en taalkundige verschillen"],
+      "effects": ["Voorafschaduwing van het Grote Schisma", "Institutionele rivaliteit"],
+      "themes": ["kerkgeschiedenis", "politiek", "cultuur"],
+      "period": "2e–7e eeuw"
+    }
+  },
+  {
+    "question": "Welke drie regio’s waren belangrijke centra van theologische discussie in de vroege kerk?",
+    "answer": "Alexandrië, Antiochië en Rome",
+    "location": [31.2001, 29.9187],
+    "timelineId": "theological_centers",
+    "mapLayer": "early_centers",
+    "context": {
+      "causes": ["Culturele diversiteit", "Opkomst van theologische scholen"],
+      "effects": ["Verschillende interpretaties van christelijke leer", "Vorming van tradities"],
+      "themes": ["theologie", "cultuur", "intellectuele geschiedenis"],
+      "period": "2e–5e eeuw"
+    }
+  },
+  {
+    "question": "Welke stad in Egypte groeide uit tot een belangrijk centrum voor christelijke theologie?",
+    "answer": "Alexandrië",
+    "location": [31.2001, 29.9187],
+    "timelineId": "alexandria_school",
+    "mapLayer": "alexandria_center",
+    "context": {
+      "causes": ["Hellenistische cultuur", "Platonische filosofische traditie"],
+      "effects": ["Ontwikkeling van de Alexandrijnse theologische stijl", "Invloed op christologie en Bijbeluitleg"],
+      "themes": ["theologie", "filosofie", "cultuur"],
+      "period": "2e–5e eeuw"
+    }
+  },
+  {
+    "question": "Welke theologische stijl wordt geassocieerd met Alexandrië?",
+    "answer": "De Alexandrijnse benadering",
+    "location": [31.2001, 29.9187],
+    "timelineId": "alexandria_school",
+    "mapLayer": "alexandria_center",
+    "context": {
+      "causes": ["Platonische traditie", "Theologische scholen in Alexandrië"],
+      "effects": ["Allegorische Bijbeluitleg", "Sterke nadruk op de goddelijke natuur van Christus"],
+      "themes": ["christologie", "hermeneutiek"],
+      "period": "2e–5e eeuw"
+    }
+  },
+  {
+    "question": "Welke stad in Syrië werd een toonaangevend centrum van christelijk denken?",
+    "answer": "Antiochië",
+    "location": [36.2, 36.1],
+    "timelineId": "antioch_school",
+    "mapLayer": "antioch_center",
+    "context": {
+      "causes": ["Vroege christelijke gemeenschap", "Missionaire activiteit van Paulus"],
+      "effects": ["Ontwikkeling van de Antiocheense theologische stijl", "Invloed op Bijbeluitleg en christologie"],
+      "themes": ["theologie", "missie", "hermeneutiek"],
+      "period": "1e–5e eeuw"
+    }
+  },
+  {
+    "question": "Welke theologische stijl wordt geassocieerd met Antiochië?",
+    "answer": "De Antiocheense benadering",
+    "location": [36.2, 36.1],
+    "timelineId": "antioch_school",
+    "mapLayer": "antioch_center",
+    "context": {
+      "causes": ["Letterlijke Bijbeluitleg", "Reactie op Alexandrijnse allegorie"],
+      "effects": ["Nadruk op de menselijke natuur van Christus", "Historisch‑grammaticale exegese"],
+      "themes": ["christologie", "hermeneutiek"],
+      "period": "3e–5e eeuw"
+    }
+  },
+  {
+    "question": "Welke drie kerkvaders uit Noord‑Afrika waren van groot belang?",
+    "answer": "Tertullianus, Cyprianus en Augustinus",
+    "location": [36.8529, 10.3231],
+    "timelineId": "north_africa_fathers",
+    "mapLayer": "carthage_region",
+    "context": {
+      "causes": ["Romeinse kolonisatie", "Sterke intellectuele traditie in Carthago"],
+      "effects": ["Ontwikkeling van Latijnse theologie", "Invloed op ecclesiologie en soteriologie"],
+      "themes": ["theologie", "kerkgeschiedenis"],
+      "period": "2e–5e eeuw"
+    }
+  },
+  {
+    "question": "Wat betekent de term 'patristisch'?",
+    "answer": "Betrekking hebbend op de kerkvaders",
+    "timelineId": "patristic_period",
+    "context": {
+      "causes": ["Ontstaan van christelijke literatuur", "Vorming van kerkelijke traditie"],
+      "effects": ["Ontwikkeling van theologische concepten", "Vorming van canon en dogma"],
+      "themes": ["theologie", "traditie"],
+      "period": "ca. 100–451"
+    }
+  },
+  {
+    "question": "Wat is het verschil tussen patristiek en patrologie?",
+    "answer": "Patristiek bestudeert de ideeën van de kerkvaders; patrologie bestudeert hun geschriften historisch en literair",
+    "timelineId": "patristic_studies",
+    "context": {
+      "causes": ["Noodzaak tot systematische studie van kerkvaders"],
+      "effects": ["Ontwikkeling van academische disciplines", "Publicatie van handboeken zoals Quasten"],
+      "themes": ["theologie", "literatuurstudie"],
+      "period": "moderne wetenschap"
+    }
+  },
+  {
+    "question": "Waarom is de tijd van de kerkvaders belangrijk voor alle grote christelijke tradities?",
+    "answer": "Omdat zij de patristische tijd zien als mijlpaal in de ontwikkeling van het christelijk dogma",
+    "timelineId": "patristic_period",
+    "context": {
+      "causes": ["Vorming van canon", "Ontwikkeling van dogma", "Theologische debatten"],
+      "effects": ["Basis voor latere tradities", "Oecumenische belijdenissen"],
+      "themes": ["dogmatiek", "kerkgeschiedenis"],
+      "period": "ca. 100–451"
+    }
+  },
+  {
+    "question": "Welke uitspraak deed Lancelot Andrewes over de basis van rechtzinnig geloof?",
+    "answer": "Twee testamenten, drie belijdenissen, vier evangeliën en de eerste vijf eeuwen van de kerkgeschiedenis",
+    "timelineId": "andrewes_statement",
+    "context": {
+      "causes": ["Anglicaanse waardering voor patristiek"],
+      "effects": ["Invloed op anglicaanse theologie"],
+      "themes": ["traditie", "dogmatiek"],
+      "period": "1555–1626"
+    }
+  },
+  {
+    "question": "Welke kwestie stond centraal in de eerste eeuw: de verhouding tussen christendom en jodendom?",
+    "answer": "Of christenen uit de heidenen besneden moesten worden",
+    "timelineId": "jewish_christian_relations",
+    "context": {
+      "causes": ["Joodse oorsprong van christendom", "Missionaire groei onder heidenen"],
+      "effects": ["Besluit van het apostelconvent", "Nieuwe interpretatie van de Thora"],
+      "themes": ["identiteit", "wet", "kerkstructuur"],
+      "period": "1e eeuw"
+    }
+  },
+  {
+    "question": "Wat was apologetiek in de tweede eeuw?",
+    "answer": "De verdediging van het christelijk geloof tegenover niet‑christelijke critici",
+    "timelineId": "apologetics_2nd_century",
+    "context": {
+      "causes": ["Vervolging door Romeinse staat", "Onbekendheid met christelijke praktijken"],
+      "effects": ["Ontwikkeling van rationele verdediging", "Werken van Justinus de Martelaar"],
+      "themes": ["apologetiek", "vervolging", "identiteit"],
+      "period": "2e eeuw"
+    }
+  },
+  {
+    "question": "Welke twee theologen waren invloedrijk vóór de bekering van Constantijn?",
+    "answer": "Irenaeus van Lyon en Origenes",
+    "timelineId": "early_theologians",
+    "context": {
+      "causes": ["Vroege theologische vragen", "Vorming van canon en traditie"],
+      "effects": ["Invloed op christologie en exegese", "Basis voor latere concilies"],
+      "themes": ["theologie", "canonvorming"],
+      "period": "2e–3e eeuw"
+    }
+  },
+  {
+    "question": "Welke gebeurtenis maakte grootschalige theologische discussie mogelijk?",
+    "answer": "De bekering van keizer Constantijn",
+    "timelineId": "constantine_conversion",
+    "context": {
+      "causes": ["Politieke veranderingen in het rijk"],
+      "effects": ["Einde van vervolging", "Theologie wordt publieke zaak"],
+      "themes": ["politiek", "kerk‑staat", "theologie"],
+      "period": "306–337"
+    }
+  },
+  {
+    "question": "Welke maatregel nam Constantijn in 321?",
+    "answer": "Hij verklaarde de zondag tot erkende feestdag",
+    "timelineId": "constantine_sunday_law",
+    "context": {
+      "causes": ["Integratie van kerk en rijk"],
+      "effects": ["Institutionalisering van christelijke praktijk"],
+      "themes": ["liturgie", "politiek"],
+      "period": "321"
+    }
+  },
+  {
+    "question": "Waarom wordt de periode 310–451 gezien als hoogtepunt van patristische theologie?",
+    "answer": "Omdat theologen vrij konden werken en dogmatische consensus werd gevormd",
+    "timelineId": "late_patristic_peak",
+    "context": {
+      "causes": ["Einde vervolging", "Staatssteun"],
+      "effects": ["Oecumenische concilies", "Belijdenissen"],
+      "themes": ["dogmatiek", "kerkgeschiedenis"],
+      "period": "310–451"
+    }
+  },
+  {
+    "question": "Waarom vinden veel studenten de patristische tijd moeilijk?",
+    "answer": "Door irrelevante debatten, filosofische complexiteit en dogmatische diversiteit",
+    "timelineId": "patristic_difficulties",
+    "context": {
+      "causes": ["Culturele afstand", "Filosofische tradities", "Dogmatische ontwikkeling"],
+      "effects": ["Hoge instapdrempel", "Noodzaak tot historische context"],
+      "themes": ["onderwijs", "theologie"],
+      "period": "moderne studie"
+    }
+  }
+]
