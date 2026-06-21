@@ -11,6 +11,8 @@ body {
 .container {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 /* headings */
@@ -65,6 +67,43 @@ h1 {
   margin-bottom: 5px;
 }
 
+/* modes: timeline, map, bigpicture, charts */
+#timeline {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+  min-height: 150px;
+  margin-bottom: 12px;
+}
+
+#map {
+  width: 100%;
+  height: min(50vh, 400px);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  margin-bottom: 12px;
+}
+
+#big {
+  min-height: 200px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+/* make canvas-based charts responsive */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100%;
+  background: transparent;
+  display: block;
+  margin-bottom: 12px;
+}
+
 /* small-screen tweaks */
 @media (max-width: 600px) {
   .container { padding-left: 6px; padding-right: 6px; }
@@ -75,6 +114,7 @@ h1 {
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.06);
   }
+  #map { height: min(45vh, 360px); }
 }
 
 /* optional: reduce motion for accessibility */
