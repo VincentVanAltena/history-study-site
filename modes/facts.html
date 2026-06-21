@@ -12,8 +12,8 @@
   <h1>Feiten oefenen</h1>
 
   <nav class="menu" aria-label="Keuze feiten">
-    <a href="#" id="startFlashcards">Flashcards</a>
-    <a href="#" id="startQuiz">Adaptieve Quiz</a>
+    <button id="startFlashcards">Flashcards</button>
+    <button id="startQuiz">Adaptieve Quiz</button>
   </nav>
 
   <!-- Flashcard UI (used by js/flashcard.js) -->
@@ -42,17 +42,29 @@
 <script src="../js/flashcard.js"></script>
 <script src="../js/adaptive_quiz.js"></script>
 <script>
-  // Show/hide appropriate UI when menu buttons are clicked
-  document.getElementById('startFlashcards').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.getElementById('flashcardContainer').style.display = 'block';
-    document.getElementById('quizContainer').style.display = 'none';
-  });
+  // Attach handlers after DOM is ready
+  document.addEventListener('DOMContentLoaded', function () {
+    const startFc = document.getElementById('startFlashcards');
+    const startQ = document.getElementById('startQuiz');
 
-  document.getElementById('startQuiz').addEventListener('click', function (e) {
-    e.preventDefault();
-    document.getElementById('quizContainer').style.display = 'block';
-    document.getElementById('flashcardContainer').style.display = 'none';
+    if (startFc) startFc.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('flashcardContainer').style.display = 'block';
+      document.getElementById('quizContainer').style.display = 'none';
+      // ensure first card is shown
+      if (typeof showCard === 'function') showCard();
+    });
+
+    if (startQ) startQ.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.getElementById('quizContainer').style.display = 'block';
+      document.getElementById('flashcardContainer').style.display = 'none';
+    });
+
+    // auto-open via hash
+    if (location.hash === '#flashcards') {
+      startFc && startFc.click();
+    }
   });
 </script>
 </body>
