@@ -1,5 +1,5 @@
 // Fix: was fetching "data/timeline.json" (wrong relative path from /modes/)
-fetch("../data/timeline.json")
+fetch("/history-study-site/data/timeline.json")
   .then(r => r.json())
   .then(data => {
     const items = Array.isArray(data) ? data : data.timeline;
