@@ -27,10 +27,31 @@ function pickQuestion() {
   return weighted[Math.floor(Math.random() * weighted.length)];
 }
 
+// Genereer 4 antwoordopties: 1 goed + 3 willekeurige foute uit QUIZ_DATA
+function buildChoices(correct) {
+  const others = QUIZ_DATA
+    .map(q => q.answer)
+    .filter(a => a.toLowerCase() !== correct.toLowerCase());
+
+  // Shuffle en pak 3 willekeurige foute antwoorden
+  for (let i = others.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [others[i], others[j]] = [others[j], others[i]];
+  }
+  const distractors = others.slice(0, 3);
+
+  // Voeg het goede antwoord toe en shuffle nogmaals
+  const choices = [...distractors, correct];
+  for (let i = choices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [choices[i], choices[j]] = [choices[j], choices[i]];
+  }
+  return choices;
+}
+
 // UI-elementen
-const questionEl   = document.getElementById("question");
-const answerInput  = document.getElementById("answerInput");
-const feedbackEl   = document.getElementById("feedback");
+const questionEl  = document.getElementById("question");
+const feedbackEl  = document.getElementById("feedback");
 
 // Quiz starten
 document.getElementById("startQuiz").addEventListener("click", () => {
@@ -53,7 +74,6 @@ function startQuiz() {
 function nextQuestion() {
   currentQuestion = pickQuestion();
   questionEl.textContent = currentQuestion.question;
-  answerInput.value = "";
   feedbackEl.textContent = "";
 
   // Tijdlijn koppelen
@@ -67,6 +87,72 @@ function nextQuestion() {
   }
 
   updateContextPanel(currentQuestion);
+  renderChoices(currentQuestion);
+}
+
+function renderChoices(q) {
+  // Verwijder eventuele oude knoppen
+  const existing = document.getElementById("choicesContainer");
+  if (existing) existing.remove();
+
+  const choices = buildChoices(q.answer);
+
+  const container = document.createElement("div");
+  container.id = "choicesContainer";
+  container.style.cssText = "display:flex; flex-direction:column; gap:8px; margin-top:12px;";
+
+  choices.forEach(choice => {
+    const btn = document.createElement("button");
+    btn.textContent = choice;
+    btn.style.cssText = "text-align:left; padding:10px 14px;";
+    btn.addEventListener("click", () => handleAnswer(choice, q.answer, container));
+    container.appendChild(btn);
+  });
+
+  // Voeg in na de vraag, vóór feedback
+  feedbackEl.parentNode.insertBefore(container, feedbackEl);
+}
+
+function handleAnswer(chosen, correct, container) {
+  // Alle knoppen uitschakelen na een keuze
+  container.querySelectorAll("button").forEach(btn => {
+    btn.disabled = true;
+    if (btn.textContent.toLowerCase() === correct.toLowerCase()) {
+      btn.style.background = "#bbf7d0";
+      btn.style.borderColor = "#22c55e";
+      btn.style.color = "#166534";
+    } else if (btn.textContent === chosen) {
+      btn.style.background = "#fee2e2";
+      btn.style.borderColor = "#ef4444";
+      btn.style.color = "#991b1b";
+    }
+  });
+
+  const isCorrect = chosen.toLowerCase() === correct.toLowerCase();
+
+  // Stats bijwerken
+  const stats = loadStats();
+  if (!stats[currentQuestion.question]) {
+    stats[currentQuestion.question] = { correct: 0, wrong: 0 };
+  }
+  if (isCorrect) {
+    stats[currentQuestion.question].correct++;
+  } else {
+    stats[currentQuestion.question].wrong++;
+  }
+  saveStats(stats);
+  logHistory(isCorrect);
+
+  // Feedback tonen
+  if (isCorrect) {
+    feedbackEl.textContent = "Goed!";
+    feedbackEl.style.color = "green";
+    setTimeout(nextQuestion, 900);
+  } else {
+    feedbackEl.textContent = `Fout — het juiste antwoord is: ${correct}`;
+    feedbackEl.style.color = "red";
+    setTimeout(nextQuestion, 1800);
+  }
 }
 
 function updateContextPanel(q) {
@@ -87,41 +173,3 @@ function updateContextPanel(q) {
     <p><strong>Periode:</strong> ${q.context.period}</p>
   `;
 }
-
-// Antwoord controleren
-document.getElementById("submitAnswer").addEventListener("click", () => {
-  if (!currentQuestion) return;
-
-  const userAnswer = answerInput.value.trim().toLowerCase();
-  const correct    = currentQuestion.answer.toLowerCase();
-  const isCorrect  = userAnswer === correct;
-
-  // Stats bijwerken (één keer)
-  const stats = loadStats();
-  if (!stats[currentQuestion.question]) {
-    stats[currentQuestion.question] = { correct: 0, wrong: 0 };
-  }
-  if (isCorrect) {
-    stats[currentQuestion.question].correct++;
-  } else {
-    stats[currentQuestion.question].wrong++;
-  }
-  saveStats(stats);
-  logHistory(isCorrect);
-
-  // Feedback tonen
-  if (isCorrect) {
-    feedbackEl.textContent = "Goed!";
-    feedbackEl.style.color = "green";
-    setTimeout(nextQuestion, 700);
-  } else {
-    feedbackEl.textContent = `Fout — het juiste antwoord is: ${currentQuestion.answer}`;
-    feedbackEl.style.color = "red";
-    setTimeout(nextQuestion, 1500);
-  }
-});
-
-// Toetsenbord-ondersteuning: Enter indienen
-answerInput && answerInput.addEventListener("keydown", e => {
-  if (e.key === "Enter") document.getElementById("submitAnswer").click();
-});
