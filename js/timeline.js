@@ -1,5 +1,5 @@
 // Fix: fetch from modes/connections.html needs to go up one folder
-fetch("../data/timeline.json")
+fetch("timeline.json")
   .then(r => r.json())
   .then(data => {
     const raw = Array.isArray(data) ? data : data.timeline;
