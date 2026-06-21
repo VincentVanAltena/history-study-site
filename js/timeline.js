@@ -1,4 +1,4 @@
-// Fix: fetch from modes/connections.html needs to go up one folder
+// Fix: was fetching "data/timeline.json" (wrong relative path from /modes/)
 fetch("timeline.json")
   .then(r => r.json())
   .then(data => {
