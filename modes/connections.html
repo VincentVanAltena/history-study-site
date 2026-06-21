@@ -2,29 +2,32 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Verbanden leggen</title>
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="../lib/leaflet.css">
-  <link rel="stylesheet" href="../lib/vis-timeline.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-sA+4d02gTavw0THYB3W/hkp6c+yQGW2cFfAJ9lEk+HI=" crossorigin="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-timeline@7.4.9/dist/vis-timeline-graph2d.min.css" integrity="sha256-qetHmsG5jAv8+0Y5tG6tw0pDRndPKE2GHU+vPLy0a4A=" crossorigin="">
 </head>
 <body>
 
-<h1>Verbanden leggen</h1>
+<main class="container">
+  <a href="../index.html" class="back-link">← Terug</a>
+  <h1>Verbanden leggen</h1>
 
-<h2>Tijdlijn</h2>
-<div id="timeline"></div>
+  <h2>Tijdlijn</h2>
+  <div id="timeline"></div>
 
-<h2>Kaart</h2>
-<div id="map" style="height:400px;"></div>
+  <h2>Kaart</h2>
+  <div id="map"></div>
 
-<h2>Causale ketens</h2>
-<div id="causal"></div>
+  <h2>Causale ketens</h2>
+  <div id="causal"></div>
+</main>
 
-<script src="../lib/leaflet.js"></script>
-<script src="../lib/vis-timeline.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-sA+4d02gTavw0THYB3W/hkp6c+yQGW2cFfAJ9lEk+HI=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/vis-timeline@7.4.9/dist/vis-timeline-graph2d.min.js" integrity="sha256-xS7EN2HilEWP9N8qQbdDrW5kFpdnV5p2k2iVczkcrNg=" crossorigin=""></script>
 <script src="../js/timeline.js"></script>
 <script src="../js/map.js"></script>
 <script src="../js/causal.js"></script>
-
 </body>
 </html>

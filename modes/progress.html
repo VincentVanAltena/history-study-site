@@ -2,20 +2,35 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Voortgang</title>
   <link rel="stylesheet" href="../style.css">
-  <script src="../lib/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 </head>
 <body>
 
-<h1>Voortgang</h1>
+<main class="container">
+  <a href="../index.html" class="back-link">← Terug</a>
+  <h1>Voortgang</h1>
 
-<h2>Per vraag</h2>
-<canvas id="perQuestionChart" width="400" height="200"></canvas>
+  <h2>Per vraag</h2>
+  <p id="perQuestionEmpty" class="empty-state" style="display:none;">
+    Nog geen vragen beantwoord. <a href="facts.html">Start een quiz!</a>
+  </p>
+  <div style="height:300px;">
+    <canvas id="perQuestionChart"></canvas>
+  </div>
 
-<h2>Over tijd</h2>
-<canvas id="overTimeChart" width="400" height="200"></canvas>
+  <h2>Over tijd</h2>
+  <p id="overTimeEmpty" class="empty-state" style="display:none;">
+    Nog geen sessies geregistreerd. <a href="facts.html">Start een quiz!</a>
+  </p>
+  <div style="height:250px;">
+    <canvas id="overTimeChart"></canvas>
+  </div>
+</main>
 
+<script src="../js/utils.js"></script>
 <script src="../js/progress.js"></script>
 </body>
 </html>

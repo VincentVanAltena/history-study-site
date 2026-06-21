@@ -123,3 +123,78 @@ canvas {
     transition: none;
   }
 }
+
+/* back navigation */
+.back-link {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #555;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+.back-link:hover { color: #111; }
+
+/* style buttons the same as menu links */
+.menu button,
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.12);
+  border-radius: 10px;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: transform 120ms ease, box-shadow 120ms ease;
+  min-height: 48px;
+}
+
+button:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus-visible {
+  outline: 3px solid rgba(59,130,246,0.35);
+  outline-offset: 3px;
+  border-color: rgba(59,130,246,0.6);
+}
+
+/* quiz answer input */
+#answerInput {
+  padding: 12px 14px;
+  border: 1px solid rgba(0,0,0,0.18);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background: white;
+}
+
+#answerInput:focus {
+  outline: 3px solid rgba(59,130,246,0.35);
+  border-color: rgba(59,130,246,0.6);
+}
+
+/* empty state message */
+.empty-state {
+  color: #666;
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: 1px dashed #ccc;
+}
+
+.empty-state a {
+  color: #3b82f6;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  button, button:active { transition: none; }
+}

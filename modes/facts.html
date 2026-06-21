@@ -9,6 +9,7 @@
 <body>
 
 <main class="container">
+  <a href="../index.html" class="back-link">← Terug</a>
   <h1>Feiten oefenen</h1>
 
   <nav class="menu" aria-label="Keuze feiten">
@@ -16,55 +17,52 @@
     <button id="startQuiz">Adaptieve Quiz</button>
   </nav>
 
-  <!-- Flashcard UI (used by js/flashcard.js) -->
-  <div id="flashcardContainer" style="display:none; margin-top:12px;">
+  <!-- Flashcard UI -->
+  <div id="flashcardContainer" style="display:none; margin-top:16px;">
     <div id="flashcard" class="context-panel" style="font-size:1.1rem; padding:18px; min-height:80px; display:flex; align-items:center; justify-content:center;"></div>
+    <div id="flashcardAnswer" class="context-panel" style="display:none; margin-top:8px; background:#f0fdf4; color:#166534; border-left: 4px solid #22c55e; padding:12px;"></div>
     <div style="margin-top:8px; display:flex; gap:8px;">
-      <button id="showAnswer">Toon antwoord</button>
-      <button id="next">Volgende</button>
+      <button id="showAnswer">Toon / verberg antwoord</button>
+      <button id="next">Volgende →</button>
     </div>
   </div>
 
-  <!-- Existing quiz container -->
-  <div id="quizContainer" style="display:none; margin-top:12px;">
+  <!-- Quiz container -->
+  <div id="quizContainer" style="display:none; margin-top:16px;">
     <h2 id="question"></h2>
-    <input id="answerInput" placeholder="Typ je antwoord...">
-    <button id="submitAnswer">Controleer</button>
-    <p id="feedback"></p>
+    <div style="display:flex; gap:8px; flex-wrap:wrap; margin-top:8px;">
+      <input id="answerInput" placeholder="Typ je antwoord..." style="flex:1; min-width:0;">
+      <button id="submitAnswer">Controleer</button>
+    </div>
+    <p id="feedback" style="margin-top:8px; font-weight:600;"></p>
   </div>
 
-  <div id="contextPanel" class="context-panel" style="display:none;">
+  <div id="contextPanel" class="context-panel" style="display:none; margin-top:16px;">
     <h2>Context</h2>
     <div id="contextContent"></div>
   </div>
 </main>
 
+<script src="../js/utils.js"></script>
 <script src="../js/flashcard.js"></script>
 <script src="../js/adaptive_quiz.js"></script>
 <script>
-  // Attach handlers after DOM is ready
   document.addEventListener('DOMContentLoaded', function () {
     const startFc = document.getElementById('startFlashcards');
-    const startQ = document.getElementById('startQuiz');
+    const startQ  = document.getElementById('startQuiz');
 
-    if (startFc) startFc.addEventListener('click', function (e) {
-      e.preventDefault();
+    startFc.addEventListener('click', function () {
       document.getElementById('flashcardContainer').style.display = 'block';
       document.getElementById('quizContainer').style.display = 'none';
-      // ensure first card is shown
       if (typeof showCard === 'function') showCard();
     });
 
-    if (startQ) startQ.addEventListener('click', function (e) {
-      e.preventDefault();
+    startQ.addEventListener('click', function () {
       document.getElementById('quizContainer').style.display = 'block';
       document.getElementById('flashcardContainer').style.display = 'none';
     });
 
-    // auto-open via hash
-    if (location.hash === '#flashcards') {
-      startFc && startFc.click();
-    }
+    if (location.hash === '#flashcards') startFc.click();
   });
 </script>
 </body>

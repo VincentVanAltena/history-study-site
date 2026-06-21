@@ -15,38 +15,24 @@
   },
   {
     "id": "rome_church_growth",
-    "start": 90,
-    "end": 100,
+    "start": 60,
+    "end": 150,
     "title": "Groei van de kerk in Rome",
     "group": "Vroege Kerk"
-  },
-  {
-    "id": "rome_constantinople_tension",
-    "start": 200,
-    "end": 700,
-    "title": "Spanningen tussen Rome en Constantinopel",
-    "group": "Late Oudheid"
-  },
-  {
-    "id": "theological_centers",
-    "start": 150,
-    "end": 500,
-    "title": "Opkomst van theologische centra: Alexandrië, Antiochië, Rome",
-    "group": "Theologie"
   },
   {
     "id": "alexandria_school",
     "start": 150,
     "end": 450,
     "title": "Opkomst van de Alexandrijnse theologische school",
-    "group": "Theologie"
+    "group": "Vroege Kerk"
   },
   {
     "id": "antioch_school",
-    "start": 100,
+    "start": 200,
     "end": 500,
-    "title": "Ontwikkeling van de Antiocheense theologische school",
-    "group": "Theologie"
+    "title": "Ontwikkeling van de Antiocheense school",
+    "group": "Vroege Kerk"
   },
   {
     "id": "north_africa_fathers",
@@ -60,27 +46,6 @@
     "start": 100,
     "end": 451,
     "title": "De tijd van de kerkvaders",
-    "group": "Kerkgeschiedenis"
-  },
-  {
-    "id": "patristic_studies",
-    "start": 1900,
-    "end": 2025,
-    "title": "Ontwikkeling van patristiek en patrologie als wetenschappen",
-    "group": "Moderne studie"
-  },
-  {
-    "id": "andrewes_statement",
-    "start": 1555,
-    "end": 1626,
-    "title": "Lancelot Andrewes en de waardering van de eerste vijf eeuwen",
-    "group": "Anglicaanse traditie"
-  },
-  {
-    "id": "jewish_christian_relations",
-    "start": 50,
-    "end": 70,
-    "title": "Discussie over verhouding christendom en jodendom",
     "group": "Vroege Kerk"
   },
   {
@@ -88,14 +53,7 @@
     "start": 100,
     "end": 200,
     "title": "Opkomst van de apologetiek",
-    "group": "Theologie"
-  },
-  {
-    "id": "early_theologians",
-    "start": 130,
-    "end": 254,
-    "title": "Irenaeus en Origenes",
-    "group": "Theologie"
+    "group": "Vroege Kerk"
   },
   {
     "id": "constantine_conversion",
@@ -105,24 +63,213 @@
     "group": "Kerk en Rijk"
   },
   {
-    "id": "constantine_sunday_law",
-    "start": 321,
-    "end": 321,
-    "title": "Constantijn verklaart zondag tot feestdag",
-    "group": "Kerk en Rijk"
+    "id": "arian_controversy",
+    "start": 318,
+    "end": 381,
+    "title": "Ariaanse controverse",
+    "group": "Christologie"
   },
   {
-    "id": "late_patristic_peak",
-    "start": 310,
-    "end": 451,
-    "title": "Hoogtepunt van de patristische theologie",
-    "group": "Dogmatiek"
+    "id": "council_nicea",
+    "start": 325,
+    "end": 325,
+    "title": "Concilie van Nicea",
+    "group": "Concilies"
   },
   {
-    "id": "patristic_difficulties",
-    "start": 1900,
+    "id": "gnostic_controversy",
+    "start": 140,
+    "end": 200,
+    "title": "Gnostische controverses",
+    "group": "Ketterijen"
+  },
+  {
+    "id": "donatist_conflict",
+    "start": 311,
+    "end": 411,
+    "title": "Donatistische controverse",
+    "group": "Kerk en Sacrament"
+  },
+  {
+    "id": "pelagian_controversy",
+    "start": 411,
+    "end": 431,
+    "title": "Pelagiaanse controverse",
+    "group": "Antropologie"
+  },
+  {
+    "id": "medieval_consolidation",
+    "start": 700,
+    "end": 1500,
+    "title": "Consolidatie van het erfgoed van de oude kerk",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "carolingian_renaissance",
+    "start": 750,
+    "end": 900,
+    "title": "Karolingische renaissance",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "cathedral_schools",
+    "start": 1050,
+    "end": 1200,
+    "title": "Opkomst van kathedraalscholen",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "scholasticism",
+    "start": 1100,
+    "end": 1350,
+    "title": "Opkomst van de scholastiek",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "thomas_aquinas",
+    "start": 1225,
+    "end": 1274,
+    "title": "Leven en werk van Thomas van Aquino",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "ockham",
+    "start": 1285,
+    "end": 1347,
+    "title": "Willem van Ockham en de via moderna",
+    "group": "Middeleeuwen"
+  },
+  {
+    "id": "renaissance_humanism",
+    "start": 1400,
+    "end": 1550,
+    "title": "Humanisme en terugkeer naar de bronnen",
+    "group": "Renaissance"
+  },
+  {
+    "id": "erasmus_humanism",
+    "start": 1469,
+    "end": 1536,
+    "title": "Humanistische hervorming door Erasmus",
+    "group": "Renaissance"
+  },
+  {
+    "id": "luther_1517",
+    "start": 1517,
+    "end": 1517,
+    "title": "Luthers 95 stellingen",
+    "group": "Reformatie"
+  },
+  {
+    "id": "zwingli_reformation",
+    "start": 1519,
+    "end": 1531,
+    "title": "Zwitserse reformatie onder Zwingli",
+    "group": "Reformatie"
+  },
+  {
+    "id": "calvin_reformation",
+    "start": 1536,
+    "end": 1564,
+    "title": "Calvijn en de gereformeerde reformatie",
+    "group": "Reformatie"
+  },
+  {
+    "id": "calvin_institutes",
+    "start": 1536,
+    "end": 1536,
+    "title": "Publicatie van Calvijns Institutie",
+    "group": "Reformatie"
+  },
+  {
+    "id": "anabaptists",
+    "start": 1525,
+    "end": 1600,
+    "title": "Radicale reformatie van de wederdopers",
+    "group": "Reformatie"
+  },
+  {
+    "id": "catholic_reformation",
+    "start": 1545,
+    "end": 1563,
+    "title": "Concilie van Trente en katholieke reformatie",
+    "group": "Reformatie"
+  },
+  {
+    "id": "confessionalization",
+    "start": 1550,
+    "end": 1700,
+    "title": "Confessionalisering in Europa",
+    "group": "Reformatie"
+  },
+  {
+    "id": "pietism",
+    "start": 1670,
+    "end": 1750,
+    "title": "Opkomst van het piëtisme",
+    "group": "Vroomheidsbewegingen"
+  },
+  {
+    "id": "puritanism",
+    "start": 1560,
+    "end": 1700,
+    "title": "Puriteinse beweging",
+    "group": "Vroomheidsbewegingen"
+  },
+  {
+    "id": "great_awakening",
+    "start": 1730,
+    "end": 1760,
+    "title": "Great Awakening",
+    "group": "Opwekkingen"
+  },
+  {
+    "id": "enlightenment_critique",
+    "start": 1700,
+    "end": 1800,
+    "title": "Verlichting en kritiek op openbaring",
+    "group": "Moderniteit"
+  },
+  {
+    "id": "schleiermacher",
+    "start": 1768,
+    "end": 1834,
+    "title": "Schleiermacher en moderne theologie",
+    "group": "Moderniteit"
+  },
+  {
+    "id": "modernism",
+    "start": 1850,
+    "end": 1950,
+    "title": "Opkomst van modernisme",
+    "group": "Moderniteit"
+  },
+  {
+    "id": "neo_orthodoxy",
+    "start": 1918,
+    "end": 1960,
+    "title": "Neo‑orthodoxie en herwaardering van openbaring",
+    "group": "20e eeuw"
+  },
+  {
+    "id": "liberation_theology",
+    "start": 1960,
+    "end": 2000,
+    "title": "Bevrijdingstheologie",
+    "group": "20e eeuw"
+  },
+  {
+    "id": "black_theology",
+    "start": 1965,
+    "end": 2000,
+    "title": "Black Theology",
+    "group": "20e eeuw"
+  },
+  {
+    "id": "pentecostalism",
+    "start": 1906,
     "end": 2025,
-    "title": "Moderne uitdagingen bij studie van patristiek",
-    "group": "Moderne studie"
+    "title": "Wereldwijde groei van het pentecostalisme",
+    "group": "20e–21e eeuw"
   }
 ]

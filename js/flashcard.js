@@ -1,22 +1,43 @@
 (function () {
-  let data = [];
+  let data  = [];
   let index = 0;
+  let answerVisible = false;
 
   function showCard() {
-    const card = document.getElementById("flashcard");
+    const card   = document.getElementById("flashcard");
+    const answer = document.getElementById("flashcardAnswer");
     if (!card) return;
+
     if (!data.length) {
       card.textContent = "Geen kaarten beschikbaar (laadt...)";
       return;
     }
+
     const item = data[index] || {};
     card.textContent = item.question || "Lege kaart";
+
+    // Reset answer visibility on new card
+    answerVisible = false;
+    if (answer) {
+      answer.textContent = "";
+      answer.style.display = "none";
+    }
   }
 
   function showAnswer() {
-    if (!data.length) return alert("Geen antwoord beschikbaar");
-    const item = data[index] || {};
-    alert(item.answer || "Geen antwoord");
+    if (!data.length) return;
+    const item   = data[index] || {};
+    const answer = document.getElementById("flashcardAnswer");
+    if (!answer) return;
+
+    if (answerVisible) {
+      answer.style.display = "none";
+      answerVisible = false;
+    } else {
+      answer.textContent = item.answer || "Geen antwoord";
+      answer.style.display = "block";
+      answerVisible = true;
+    }
   }
 
   function nextCard() {
@@ -27,16 +48,8 @@
 
   async function tryLoadData() {
     const candidates = [
-      '../data/facts.json', // relative from /modes/
-      '/data/facts.json', // absolute from site root
-      // attempt to derive repo-rooted path from location.pathname
-      (function(){
-        // remove last segment (file) and ensure root of repo
-        const path = location.pathname.replace(/\/modes\/.*$/, '');
-        return path + '/data/facts.json';
-      })(),
-      // GitHub raw-style path (fall back)
-      location.origin + '/VincentVanAltena/history-study-site/data/facts.json'
+      '../data/facts.json',
+      '/data/facts.json',
     ];
 
     for (const p of candidates) {
@@ -54,7 +67,6 @@
   }
 
   document.addEventListener('DOMContentLoaded', function () {
-    // load data using multiple fallbacks
     tryLoadData()
       .then(json => {
         data = Array.isArray(json) ? json : [];
@@ -67,16 +79,9 @@
         if (card) card.textContent = "Fout bij laden kaarten.";
       });
 
-    // wire buttons (only if present)
     const showBtn = document.getElementById('showAnswer');
     const nextBtn = document.getElementById('next');
     if (showBtn) showBtn.addEventListener('click', showAnswer);
     if (nextBtn) nextBtn.addEventListener('click', nextCard);
-
-    // if page loaded with hash, auto-open
-    if (location.hash === '#flashcards') {
-      const startFc = document.getElementById('startFlashcards');
-      startFc && startFc.click();
-    }
   });
 })();

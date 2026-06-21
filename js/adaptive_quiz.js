@@ -1,16 +1,9 @@
+// adaptive_quiz.js — depends on utils.js being loaded first
+
 let QUIZ_DATA = [];
 let currentQuestion = null;
 
-// Stats opslaan in localStorage
-function loadStats() {
-  return JSON.parse(localStorage.getItem("quizStats") || "{}");
-}
-
-function saveStats(stats) {
-  localStorage.setItem("quizStats", JSON.stringify(stats));
-}
-
-// Gewicht berekenen
+// Gewicht berekenen: vragen die vaker fout gaan komen vaker terug
 function getWeight(q, stats) {
   const s = stats[q.question] || { correct: 0, wrong: 0 };
   let weight = 1 + s.wrong - Math.floor(s.correct / 3);
@@ -21,14 +14,10 @@ function getWeight(q, stats) {
 function buildWeightedList() {
   const stats = loadStats();
   const weighted = [];
-
   QUIZ_DATA.forEach(q => {
     const w = getWeight(q, stats);
-    for (let i = 0; i < w; i++) {
-      weighted.push(q);
-    }
+    for (let i = 0; i < w; i++) weighted.push(q);
   });
-
   return weighted;
 }
 
@@ -38,16 +27,16 @@ function pickQuestion() {
   return weighted[Math.floor(Math.random() * weighted.length)];
 }
 
-// UI elementen
-const questionEl = document.getElementById("question");
-const answerInput = document.getElementById("answerInput");
-const feedbackEl = document.getElementById("feedback");
+// UI-elementen
+const questionEl   = document.getElementById("question");
+const answerInput  = document.getElementById("answerInput");
+const feedbackEl   = document.getElementById("feedback");
 
 // Quiz starten
-document.getElementById("startQuiz").onclick = () => {
+document.getElementById("startQuiz").addEventListener("click", () => {
   document.getElementById("quizContainer").style.display = "block";
   startQuiz();
-};
+});
 
 function startQuiz() {
   fetch("../data/facts.json")
@@ -55,6 +44,9 @@ function startQuiz() {
     .then(json => {
       QUIZ_DATA = json;
       nextQuestion();
+    })
+    .catch(() => {
+      if (questionEl) questionEl.textContent = "Kon vragen niet laden.";
     });
 }
 
@@ -65,12 +57,12 @@ function nextQuestion() {
   feedbackEl.textContent = "";
 
   // Tijdlijn koppelen
-  if (currentQuestion.timelineId) {
+  if (currentQuestion.timelineId && typeof window.focusTimeline === "function") {
     window.focusTimeline(currentQuestion.timelineId);
   }
 
   // Kaart koppelen
-  if (currentQuestion.mapLayer || currentQuestion.location) {
+  if ((currentQuestion.mapLayer || currentQuestion.location) && typeof window.focusMap === "function") {
     window.focusMap(currentQuestion.mapLayer, currentQuestion.location);
   }
 
@@ -78,8 +70,9 @@ function nextQuestion() {
 }
 
 function updateContextPanel(q) {
-  const panel = document.getElementById("contextPanel");
+  const panel   = document.getElementById("contextPanel");
   const content = document.getElementById("contextContent");
+  if (!panel || !content) return;
 
   if (!q.context) {
     panel.style.display = "none";
@@ -87,76 +80,48 @@ function updateContextPanel(q) {
   }
 
   panel.style.display = "block";
-
   content.innerHTML = `
-    Oorzaken
-    
-${q.context.causes.map(c => `- ${c}
-`).join("")}
-
-    Gevolgen
-    
-${q.context.effects.map(e => `- ${e}
-`).join("")}
-
-    Thema's
-    ${q.context.themes.join(", ")}
-
-    Periode
-    ${q.context.period}
-
+    <p><strong>Oorzaken:</strong> ${q.context.causes.join(", ")}</p>
+    <p><strong>Gevolgen:</strong> ${q.context.effects.join(", ")}</p>
+    <p><strong>Thema's:</strong> ${q.context.themes.join(", ")}</p>
+    <p><strong>Periode:</strong> ${q.context.period}</p>
   `;
 }
 
 // Antwoord controleren
-document.getElementById("submitAnswer").onclick = () => {
-  const userAnswer = answerInput.value.trim().toLowerCase();
-  const correct = currentQuestion.answer.toLowerCase();
+document.getElementById("submitAnswer").addEventListener("click", () => {
+  if (!currentQuestion) return;
 
+  const userAnswer = answerInput.value.trim().toLowerCase();
+  const correct    = currentQuestion.answer.toLowerCase();
+  const isCorrect  = userAnswer === correct;
+
+  // Stats bijwerken (één keer)
   const stats = loadStats();
   if (!stats[currentQuestion.question]) {
     stats[currentQuestion.question] = { correct: 0, wrong: 0 };
   }
-
-  if (userAnswer === correct) {
+  if (isCorrect) {
     stats[currentQuestion.question].correct++;
-    feedbackEl.textContent = "Goed!";
-    feedbackEl.style.color = "green";
-
-    saveStats(stats);
-
-    setTimeout(nextQuestion, 700);
   } else {
     stats[currentQuestion.question].wrong++;
+  }
+  saveStats(stats);
+  logHistory(isCorrect);
+
+  // Feedback tonen
+  if (isCorrect) {
+    feedbackEl.textContent = "Goed!";
+    feedbackEl.style.color = "green";
+    setTimeout(nextQuestion, 700);
+  } else {
     feedbackEl.textContent = `Fout — het juiste antwoord is: ${currentQuestion.answer}`;
     feedbackEl.style.color = "red";
-
-    saveStats(stats);
-
     setTimeout(nextQuestion, 1500);
   }
-  function logHistory(correct) {
-  const history = JSON.parse(localStorage.getItem("quizHistory") || "[]");
+});
 
-  const today = new Date().toISOString().slice(0, 10);
-  let entry = history.find(h => h.date === today);
-
-  if (!entry) {
-    entry = { date: today, correct: 0, wrong: 0 };
-    history.push(entry);
-  }
-
-  if (correct) entry.correct++;
-  else entry.wrong++;
-
-  localStorage.setItem("quizHistory", JSON.stringify(history));
-}
-if (userAnswer === correct) {
-  stats[currentQuestion.question].correct++;
-  logHistory(true);
-} else {
-  stats[currentQuestion.question].wrong++;
-  logHistory(false);
-}
-
-};
+// Toetsenbord-ondersteuning: Enter indienen
+answerInput && answerInput.addEventListener("keydown", e => {
+  if (e.key === "Enter") document.getElementById("submitAnswer").click();
+});
