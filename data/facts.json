@@ -3,12 +3,21 @@
     "id": 1,
     "question": "Waar vond het christendom zijn oorsprong volgens McGrath?",
     "answer": "In Palestina, vooral in Jeruzalem.",
+    "event": "Het christendom vond zijn oorsprong in Palestina, vooral in Jeruzalem.",
     "timelineId": "early_christianity",
     "mapLayer": "palestine_1st_century",
     "context": {
-      "causes": ["Joodse religieuze traditie", "Prediking van Jezus"],
-      "effects": ["Vorming van vroege gemeenten"],
-      "themes": ["oorsprong", "identiteit"],
+      "causes": [
+        "Joodse religieuze traditie",
+        "Prediking van Jezus"
+      ],
+      "effects": [
+        "Vorming van vroege gemeenten"
+      ],
+      "themes": [
+        "oorsprong",
+        "identiteit"
+      ],
       "period": "1e eeuw"
     },
     "source_quote": "Het christendom vindt zijn oorsprong in Palestina."
@@ -17,12 +26,20 @@
     "id": 2,
     "question": "Welke apostel speelde een sleutelrol in de verspreiding van het christendom buiten Palestina?",
     "answer": "Paulus van Tarsus.",
+    "event": "Paulus van Tarsus speelde een sleutelrol in de verspreiding van het christendom buiten Palestina.",
     "timelineId": "paul_missions",
     "mapLayer": "pauline_routes",
     "context": {
-      "causes": ["Bekering van Paulus"],
-      "effects": ["Gemeentestichting in het Middellandse Zeegebied"],
-      "themes": ["missie", "verspreiding"],
+      "causes": [
+        "Bekering van Paulus"
+      ],
+      "effects": [
+        "Gemeentestichting in het Middellandse Zeegebied"
+      ],
+      "themes": [
+        "missie",
+        "verspreiding"
+      ],
       "period": "1e eeuw"
     },
     "source_quote": "Door de inspanningen van evangeliepredikers zoals Paulus van Tarsus."
@@ -31,12 +48,20 @@
     "id": 3,
     "question": "Welke stad werd in de eerste eeuw een belangrijk centrum van christelijke activiteit?",
     "answer": "Rome.",
+    "event": "Rome werd in de eerste eeuw een belangrijk centrum van christelijke activiteit.",
     "timelineId": "rome_church_growth",
     "mapLayer": "roman_empire",
     "context": {
-      "causes": ["Migratie van christenen"],
-      "effects": ["Opkomst van de bisschop van Rome"],
-      "themes": ["kerkstructuur", "macht"],
+      "causes": [
+        "Migratie van christenen"
+      ],
+      "effects": [
+        "Opkomst van de bisschop van Rome"
+      ],
+      "themes": [
+        "kerkstructuur",
+        "macht"
+      ],
       "period": "1e eeuw"
     },
     "source_quote": "Het christendom was bijzonder krachtig geworden in Rome."
@@ -45,12 +70,20 @@
     "id": 4,
     "question": "Welke twee steden vormden later de machtscentra van de westerse en oosterse kerk?",
     "answer": "Rome en Constantinopel.",
+    "event": "Rome en Constantinopel vormden later de machtscentra van respectievelijk de westerse en de oosterse kerk.",
     "timelineId": "rome_constantinople_tension",
     "mapLayer": "late_antiquity_centers",
     "context": {
-      "causes": ["Groei van beide kerken"],
-      "effects": ["Voorafschaduwing van het Grote Schisma"],
-      "themes": ["kerkgeschiedenis", "politiek"],
+      "causes": [
+        "Groei van beide kerken"
+      ],
+      "effects": [
+        "Voorafschaduwing van het Grote Schisma"
+      ],
+      "themes": [
+        "kerkgeschiedenis",
+        "politiek"
+      ],
       "period": "2e–7e eeuw"
     },
     "source_quote": "Spanningen tussen Rome en Constantinopel."
@@ -59,12 +92,20 @@
     "id": 5,
     "question": "Welke stad werd een centrum van allegorische Bijbeluitleg?",
     "answer": "Alexandrië.",
+    "event": "Alexandrië werd een centrum van allegorische Bijbeluitleg.",
     "timelineId": "alexandria_school",
     "mapLayer": "alexandria_center",
     "context": {
-      "causes": ["Platonische traditie"],
-      "effects": ["Allegorische exegese"],
-      "themes": ["hermeneutiek", "christologie"],
+      "causes": [
+        "Platonische traditie"
+      ],
+      "effects": [
+        "Allegorische exegese"
+      ],
+      "themes": [
+        "hermeneutiek",
+        "christologie"
+      ],
       "period": "2e–5e eeuw"
     },
     "source_quote": "De 'Alexandrijnse' benadering van Bijbeluitleg."
@@ -73,12 +114,19 @@
     "id": 6,
     "question": "Welke stad stond bekend om haar letterlijke Bijbeluitleg?",
     "answer": "Antiochië.",
+    "event": "Antiochië stond bekend om haar letterlijke, historisch-grammaticale Bijbeluitleg.",
     "timelineId": "antioch_school",
     "mapLayer": "antioch_center",
     "context": {
-      "causes": ["Reactie op allegorie"],
-      "effects": ["Historisch‑grammaticale methode"],
-      "themes": ["hermeneutiek"],
+      "causes": [
+        "Reactie op allegorie"
+      ],
+      "effects": [
+        "Historisch‑grammaticale methode"
+      ],
+      "themes": [
+        "hermeneutiek"
+      ],
       "period": "3e–5e eeuw"
     },
     "source_quote": "De term 'Antiocheens' wordt vaak gebruikt."
@@ -87,12 +135,19 @@
     "id": 7,
     "question": "Welke drie Noord‑Afrikaanse kerkvaders waren invloedrijk?",
     "answer": "Tertullianus, Cyprianus en Augustinus.",
+    "event": "Tertullianus, Cyprianus en Augustinus waren invloedrijke Noord-Afrikaanse kerkvaders.",
     "timelineId": "north_africa_fathers",
     "mapLayer": "carthage_region",
     "context": {
-      "causes": ["Romeinse kolonisatie"],
-      "effects": ["Latijnse theologie"],
-      "themes": ["kerkgeschiedenis"],
+      "causes": [
+        "Romeinse kolonisatie"
+      ],
+      "effects": [
+        "Latijnse theologie"
+      ],
+      "themes": [
+        "kerkgeschiedenis"
+      ],
       "period": "2e–5e eeuw"
     },
     "source_quote": "Belangrijke schrijvers waren Tertullianus, Cyprianus en Augustinus."
@@ -101,11 +156,18 @@
     "id": 8,
     "question": "Wat betekent de term 'patristisch'?",
     "answer": "Betrekking hebbend op de kerkvaders.",
+    "event": "De term 'patristisch' verwijst naar alles wat betrekking heeft op de kerkvaders.",
     "timelineId": "patristic_period",
     "context": {
-      "causes": ["Vorming van vroege theologie"],
-      "effects": ["Ontwikkeling van dogma"],
-      "themes": ["traditie"],
+      "causes": [
+        "Vorming van vroege theologie"
+      ],
+      "effects": [
+        "Ontwikkeling van dogma"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "100–451"
     },
     "source_quote": "De uitdrukking 'patristisch' komt van pater."
@@ -114,11 +176,18 @@
     "id": 9,
     "question": "Wat was apologetiek in de vroege kerk?",
     "answer": "De verdediging van het christelijk geloof tegenover critici.",
+    "event": "Apologetiek was in de vroege kerk de verdediging van het christelijk geloof tegenover critici.",
     "timelineId": "apologetics_2nd_century",
     "context": {
-      "causes": ["Vervolging"],
-      "effects": ["Rationele verdediging"],
-      "themes": ["apologetiek"],
+      "causes": [
+        "Vervolging"
+      ],
+      "effects": [
+        "Rationele verdediging"
+      ],
+      "themes": [
+        "apologetiek"
+      ],
       "period": "2e eeuw"
     },
     "source_quote": "Een belangrijke kwestie in de tweede eeuw was de apologetiek."
@@ -127,11 +196,18 @@
     "id": 10,
     "question": "Welke gebeurtenis maakte theologische discussie op grote schaal mogelijk?",
     "answer": "De bekering van keizer Constantijn.",
+    "event": "De bekering van keizer Constantijn maakte theologische discussie op grote schaal mogelijk.",
     "timelineId": "constantine_conversion",
     "context": {
-      "causes": ["Politieke veranderingen"],
-      "effects": ["Einde van vervolging"],
-      "themes": ["kerk en staat"],
+      "causes": [
+        "Politieke veranderingen"
+      ],
+      "effects": [
+        "Einde van vervolging"
+      ],
+      "themes": [
+        "kerk en staat"
+      ],
       "period": "306–337"
     },
     "source_quote": "Door de bekering van keizer Constantijn."
@@ -140,11 +216,18 @@
     "id": 11,
     "question": "Welke controverse ging over de aard van Christus?",
     "answer": "De ariaanse controverse.",
+    "event": "De ariaanse controverse ging over de aard van Christus.",
     "timelineId": "arian_controversy",
     "context": {
-      "causes": ["Vragen over goddelijkheid van Christus"],
-      "effects": ["Concilie van Nicea"],
-      "themes": ["christologie"],
+      "causes": [
+        "Vragen over goddelijkheid van Christus"
+      ],
+      "effects": [
+        "Concilie van Nicea"
+      ],
+      "themes": [
+        "christologie"
+      ],
       "period": "4e eeuw"
     },
     "source_quote": "De ariaanse controverse over de dubbele aard van Jezus Christus."
@@ -153,12 +236,19 @@
     "id": 12,
     "question": "Welke drie centra waren belangrijk voor middeleeuwse theologie?",
     "answer": "Parijs, Bologna en Oxford.",
+    "event": "Parijs, Bologna en Oxford waren drie belangrijke centra voor middeleeuwse theologie.",
     "timelineId": "medieval_universities",
     "mapLayer": "paris_university",
     "context": {
-      "causes": ["Stichting van universiteiten"],
-      "effects": ["Scholastiek"],
-      "themes": ["onderwijs"],
+      "causes": [
+        "Stichting van universiteiten"
+      ],
+      "effects": [
+        "Scholastiek"
+      ],
+      "themes": [
+        "onderwijs"
+      ],
       "period": "12e–13e eeuw"
     },
     "source_quote": "De opkomst van het aan kathedralen en kloosters gelieerde onderwijs."
@@ -167,11 +257,18 @@
     "id": 13,
     "question": "Wat was scholastiek?",
     "answer": "Een methode die rede en geloof systematisch combineerde.",
+    "event": "Scholastiek was een methode die rede en geloof systematisch combineerde.",
     "timelineId": "scholasticism",
     "context": {
-      "causes": ["Universitaire ontwikkeling"],
-      "effects": ["Summa's en disputaties"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Universitaire ontwikkeling"
+      ],
+      "effects": [
+        "Summa's en disputaties"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "12e–14e eeuw"
     },
     "source_quote": "De opkomst van de scholastiek."
@@ -180,11 +277,18 @@
     "id": 14,
     "question": "Wie schreef de Vier Boeken van de Uitspraken?",
     "answer": "Pietro Lombardo.",
+    "event": "Pietro Lombardo schreef de Vier Boeken van de Uitspraken.",
     "timelineId": "lombard_sentences",
     "context": {
-      "causes": ["Nood aan systematische ordening"],
-      "effects": ["Standaard leerboek"],
-      "themes": ["systematische theologie"],
+      "causes": [
+        "Nood aan systematische ordening"
+      ],
+      "effects": [
+        "Standaard leerboek"
+      ],
+      "themes": [
+        "systematische theologie"
+      ],
       "period": "12e eeuw"
     },
     "source_quote": "Pietro Lombardo en de Vier Boeken van de Uitspraken."
@@ -193,11 +297,18 @@
     "id": 15,
     "question": "Welke beweging legde nadruk op terugkeer naar de bronnen?",
     "answer": "Het humanisme.",
+    "event": "Het humanisme legde nadruk op terugkeer naar de bronnen.",
     "timelineId": "renaissance_humanism",
     "context": {
-      "causes": ["Kritiek op scholastiek"],
-      "effects": ["Nieuwe Bijbelvertalingen"],
-      "themes": ["humanisme"],
+      "causes": [
+        "Kritiek op scholastiek"
+      ],
+      "effects": [
+        "Nieuwe Bijbelvertalingen"
+      ],
+      "themes": [
+        "humanisme"
+      ],
       "period": "15e eeuw"
     },
     "source_quote": "Humanisme."
@@ -206,12 +317,19 @@
     "id": 16,
     "question": "Welke gebeurtenis markeert het begin van de reformatie?",
     "answer": "Luthers 95 stellingen.",
+    "event": "Luthers 95 stellingen markeren het begin van de reformatie.",
     "timelineId": "luther_1517",
     "mapLayer": "wittenberg",
     "context": {
-      "causes": ["Aflatenhandel"],
-      "effects": ["Breuk met Rome"],
-      "themes": ["reformatie"],
+      "causes": [
+        "Aflatenhandel"
+      ],
+      "effects": [
+        "Breuk met Rome"
+      ],
+      "themes": [
+        "reformatie"
+      ],
       "period": "1517"
     },
     "source_quote": "De lutherse reformatie in Duitsland."
@@ -220,11 +338,18 @@
     "id": 17,
     "question": "Welke stroming legde nadruk op radicale navolging van Christus?",
     "answer": "De wederdopers.",
+    "event": "De wederdopers legden nadruk op radicale navolging van Christus.",
     "timelineId": "radical_reformation",
     "context": {
-      "causes": ["Onvrede met halfslachtige hervormingen"],
-      "effects": ["Vervolging van wederdopers"],
-      "themes": ["discipelschap"],
+      "causes": [
+        "Onvrede met halfslachtige hervormingen"
+      ],
+      "effects": [
+        "Vervolging van wederdopers"
+      ],
+      "themes": [
+        "discipelschap"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "De radicale reformatie van de wederdopers."
@@ -233,11 +358,18 @@
     "id": 18,
     "question": "Wat was het doel van de katholieke reformatie?",
     "answer": "Hervorming binnen de kerk en bestrijding van protestantisme.",
+    "event": "Het doel van de katholieke reformatie was hervorming binnen de kerk en bestrijding van het protestantisme.",
     "timelineId": "catholic_reformation",
     "context": {
-      "causes": ["Misstanden"],
-      "effects": ["Concilie van Trente"],
-      "themes": ["traditie"],
+      "causes": [
+        "Misstanden"
+      ],
+      "effects": [
+        "Concilie van Trente"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "1545–1563"
     },
     "source_quote": "De katholieke reformatie."
@@ -246,11 +378,18 @@
     "id": 19,
     "question": "Welke beweging vormde een nieuwe intellectuele omgeving voor de theologie?",
     "answer": "Het modernisme.",
+    "event": "Het modernisme vormde een nieuwe intellectuele omgeving voor de theologie.",
     "timelineId": "modernism",
     "context": {
-      "causes": ["Verlichting"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["moderniteit"],
+      "causes": [
+        "Verlichting"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "moderniteit"
+      ],
       "period": "19e–20e eeuw"
     },
     "source_quote": "Het modernisme, een nieuwe intellectuele omgeving."
@@ -259,11 +398,18 @@
     "id": 20,
     "question": "Welke vraag stelde de Verlichting centraal over de Schrift?",
     "answer": "Wat is de status en interpretatie van de Schrift?",
+    "event": "De Verlichting stelde de status en interpretatie van de Schrift centraal.",
     "timelineId": "enlightenment_scripture",
     "context": {
-      "causes": ["Rationalisme"],
-      "effects": ["Historisch‑kritische methode"],
-      "themes": ["hermeneutiek"],
+      "causes": [
+        "Rationalisme"
+      ],
+      "effects": [
+        "Historisch‑kritische methode"
+      ],
+      "themes": [
+        "hermeneutiek"
+      ],
       "period": "18e eeuw"
     },
     "source_quote": "De status en interpretatie van de Schrift."
@@ -272,11 +418,18 @@
     "id": 21,
     "question": "Welke theoloog wordt gezien als grondlegger van moderne protestantse theologie?",
     "answer": "Friedrich Schleiermacher.",
+    "event": "Friedrich Schleiermacher wordt gezien als grondlegger van de moderne protestantse theologie.",
     "timelineId": "schleiermacher",
     "context": {
-      "causes": ["Romantiek"],
-      "effects": ["Theologie van gevoel en ervaring"],
-      "themes": ["ervaring"],
+      "causes": [
+        "Romantiek"
+      ],
+      "effects": [
+        "Theologie van gevoel en ervaring"
+      ],
+      "themes": [
+        "ervaring"
+      ],
       "period": "19e eeuw"
     },
     "source_quote": "Friedrich Schleiermacher."
@@ -285,11 +438,18 @@
     "id": 22,
     "question": "Welke theoloog reageerde fel tegen het modernisme?",
     "answer": "Karl Barth.",
+    "event": "Karl Barth reageerde fel tegen het modernisme.",
     "timelineId": "barth_theology",
     "context": {
-      "causes": ["Kritiek op liberalisme"],
-      "effects": ["Dialectische theologie"],
-      "themes": ["openbaring"],
+      "causes": [
+        "Kritiek op liberalisme"
+      ],
+      "effects": [
+        "Dialectische theologie"
+      ],
+      "themes": [
+        "openbaring"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Karl Barth."
@@ -298,11 +458,18 @@
     "id": 23,
     "question": "Welke beweging benadrukte bevrijding van onderdrukking als theologisch thema?",
     "answer": "Bevrijdingstheologie.",
+    "event": "Bevrijdingstheologie benadrukte bevrijding van onderdrukking als theologisch thema.",
     "timelineId": "liberation_theology",
     "context": {
-      "causes": ["Sociale ongelijkheid"],
-      "effects": ["Contextuele theologie"],
-      "themes": ["rechtvaardigheid"],
+      "causes": [
+        "Sociale ongelijkheid"
+      ],
+      "effects": [
+        "Contextuele theologie"
+      ],
+      "themes": [
+        "rechtvaardigheid"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Bevrijdingstheologie."
@@ -311,11 +478,18 @@
     "id": 24,
     "question": "Welke beweging legde nadruk op de rol van vrouwen in theologie?",
     "answer": "Feministische theologie.",
+    "event": "Feministische theologie legde nadruk op de rol van vrouwen in de theologie.",
     "timelineId": "feminist_theology",
     "context": {
-      "causes": ["Kritiek op patriarchale structuren"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["gender"],
+      "causes": [
+        "Kritiek op patriarchale structuren"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "gender"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Het feminisme."
@@ -324,11 +498,18 @@
     "id": 25,
     "question": "Welke beweging bekritiseerde modernistische en postmoderne theologie vanuit traditie?",
     "answer": "Radicale orthodoxie.",
+    "event": "Radicale orthodoxie bekritiseerde modernistische en postmoderne theologie vanuit de traditie.",
     "timelineId": "radical_orthodoxy",
     "context": {
-      "causes": ["Kritiek op secularisme"],
-      "effects": ["Herwaardering van klassieke bronnen"],
-      "themes": ["traditie"],
+      "causes": [
+        "Kritiek op secularisme"
+      ],
+      "effects": [
+        "Herwaardering van klassieke bronnen"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Radicale orthodoxie."
@@ -337,11 +518,19 @@
     "id": 26,
     "question": "Welke rol speelde Irenaeus in de strijd tegen het gnosticisme?",
     "answer": "Hij verdedigde de apostolische traditie tegen gnostische leringen.",
+    "event": "Irenaeus verdedigde de apostolische traditie tegen gnostische leringen.",
     "timelineId": "gnostic_controversy",
     "context": {
-      "causes": ["Opkomst van gnostische groepen"],
-      "effects": ["Versterking van canon en traditie"],
-      "themes": ["ketterij", "traditie"],
+      "causes": [
+        "Opkomst van gnostische groepen"
+      ],
+      "effects": [
+        "Versterking van canon en traditie"
+      ],
+      "themes": [
+        "ketterij",
+        "traditie"
+      ],
       "period": "2e eeuw"
     },
     "source_quote": "De rol van de traditie: de gnostische controverses."
@@ -350,11 +539,19 @@
     "id": 27,
     "question": "Welke theoloog wordt gezien als de vader van de Latijnse theologie?",
     "answer": "Tertullianus.",
+    "event": "Tertullianus wordt gezien als de vader van de Latijnse theologie.",
     "timelineId": "tertullian",
     "context": {
-      "causes": ["Latijnse ontwikkeling van theologie"],
-      "effects": ["Vorming van westerse terminologie"],
-      "themes": ["taal", "traditie"],
+      "causes": [
+        "Latijnse ontwikkeling van theologie"
+      ],
+      "effects": [
+        "Vorming van westerse terminologie"
+      ],
+      "themes": [
+        "taal",
+        "traditie"
+      ],
       "period": "ca. 160–225"
     },
     "source_quote": "Tertullianus (ca. 160–ca. 225)."
@@ -363,11 +560,18 @@
     "id": 28,
     "question": "Welke kerkvader speelde een sleutelrol in de triniteitsleer?",
     "answer": "Athanasius.",
+    "event": "Athanasius speelde een sleutelrol in de ontwikkeling van de triniteitsleer.",
     "timelineId": "athanasius_trinity",
     "context": {
-      "causes": ["Ariaanse controverse"],
-      "effects": ["Bevestiging van homoousios"],
-      "themes": ["triniteitsleer"],
+      "causes": [
+        "Ariaanse controverse"
+      ],
+      "effects": [
+        "Bevestiging van homoousios"
+      ],
+      "themes": [
+        "triniteitsleer"
+      ],
       "period": "4e eeuw"
     },
     "source_quote": "Athanasius (ca. 296–ca. 373)."
@@ -376,11 +580,18 @@
     "id": 29,
     "question": "Welke drie Cappadocische kerkvaders waren invloedrijk?",
     "answer": "Basilius, Gregorius van Nyssa en Gregorius van Nazianze.",
+    "event": "Basilius, Gregorius van Nyssa en Gregorius van Nazianze waren invloedrijke Cappadocische kerkvaders.",
     "timelineId": "cappadocians",
     "context": {
-      "causes": ["Noodzaak tot verduidelijking van de Drie‑eenheid"],
-      "effects": ["Formulering van één wezen, drie personen"],
-      "themes": ["triniteitsleer"],
+      "causes": [
+        "Noodzaak tot verduidelijking van de Drie‑eenheid"
+      ],
+      "effects": [
+        "Formulering van één wezen, drie personen"
+      ],
+      "themes": [
+        "triniteitsleer"
+      ],
       "period": "4e eeuw"
     },
     "source_quote": "De Cappadocische kerkvaders."
@@ -389,11 +600,19 @@
     "id": 30,
     "question": "Welke controverse draaide om de vraag of sacramenten geldig zijn bij onwaardige priesters?",
     "answer": "De donatistische controverse.",
+    "event": "De donatistische controverse draaide om de vraag of sacramenten geldig zijn wanneer ze door onwaardige priesters worden bediend.",
     "timelineId": "donatist_conflict",
     "context": {
-      "causes": ["Vervolging en verraad in Noord‑Afrika"],
-      "effects": ["Augustinus' visie op de kerk"],
-      "themes": ["kerk", "sacramenten"],
+      "causes": [
+        "Vervolging en verraad in Noord‑Afrika"
+      ],
+      "effects": [
+        "Augustinus' visie op de kerk"
+      ],
+      "themes": [
+        "kerk",
+        "sacramenten"
+      ],
       "period": "4e–5e eeuw"
     },
     "source_quote": "Het conflict met de donatisten."
@@ -402,11 +621,19 @@
     "id": 31,
     "question": "Welke controverse draaide om de rol van menselijke wil in de verlossing?",
     "answer": "Het pelagianisme.",
+    "event": "Het pelagianisme draaide om de rol van de menselijke wil in de verlossing.",
     "timelineId": "pelagian_controversy",
     "context": {
-      "causes": ["Discussie over erfzonde"],
-      "effects": ["Augustinus' genadeleer"],
-      "themes": ["antropologie", "genade"],
+      "causes": [
+        "Discussie over erfzonde"
+      ],
+      "effects": [
+        "Augustinus' genadeleer"
+      ],
+      "themes": [
+        "antropologie",
+        "genade"
+      ],
       "period": "5e eeuw"
     },
     "source_quote": "De genadeleer en het conflict met de pelagianen."
@@ -415,11 +642,18 @@
     "id": 32,
     "question": "Wat was een belangrijk doel van middeleeuwse theologie?",
     "answer": "Consolidatie van het erfgoed van de oude kerk.",
+    "event": "Een belangrijk doel van de middeleeuwse theologie was de consolidatie van het erfgoed van de oude kerk.",
     "timelineId": "medieval_consolidation",
     "context": {
-      "causes": ["Overlevering van patristische bronnen"],
-      "effects": ["Systematische theologie"],
-      "themes": ["traditie"],
+      "causes": [
+        "Overlevering van patristische bronnen"
+      ],
+      "effects": [
+        "Systematische theologie"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "700–1500"
     },
     "source_quote": "Consolidatie van het erfgoed van de oude kerk."
@@ -428,11 +662,19 @@
     "id": 33,
     "question": "Welke middeleeuwse beweging onderzocht de rol van de rede in theologie?",
     "answer": "De scholastiek.",
+    "event": "De scholastiek onderzocht in de middeleeuwen de rol van de rede in de theologie.",
     "timelineId": "scholasticism",
     "context": {
-      "causes": ["Ontwikkeling van universiteiten"],
-      "effects": ["Rationele theologie"],
-      "themes": ["rede", "filosofie"],
+      "causes": [
+        "Ontwikkeling van universiteiten"
+      ],
+      "effects": [
+        "Rationele theologie"
+      ],
+      "themes": [
+        "rede",
+        "filosofie"
+      ],
       "period": "12e–14e eeuw"
     },
     "source_quote": "De opkomst van de scholastiek."
@@ -441,11 +683,18 @@
     "id": 34,
     "question": "Welke theoloog wordt gezien als de grootste middeleeuwse systematische denker?",
     "answer": "Thomas van Aquino.",
+    "event": "Thomas van Aquino wordt gezien als de grootste middeleeuwse systematische denker.",
     "timelineId": "thomas_aquinas",
     "context": {
-      "causes": ["Aristotelische herontdekking"],
-      "effects": ["Summa Theologiae"],
-      "themes": ["systematische theologie"],
+      "causes": [
+        "Aristotelische herontdekking"
+      ],
+      "effects": [
+        "Summa Theologiae"
+      ],
+      "themes": [
+        "systematische theologie"
+      ],
       "period": "13e eeuw"
     },
     "source_quote": "Thomas van Aquino (ca. 1225–1274)."
@@ -454,11 +703,18 @@
     "id": 35,
     "question": "Welke beweging bekritiseerde de Vulgaat als Bijbelvertaling?",
     "answer": "Het humanisme.",
+    "event": "Het humanisme bekritiseerde de Vulgaat als Bijbelvertaling.",
     "timelineId": "renaissance_humanism",
     "context": {
-      "causes": ["Terugkeer naar bronnen"],
-      "effects": ["Nieuwe vertalingen"],
-      "themes": ["filologie"],
+      "causes": [
+        "Terugkeer naar bronnen"
+      ],
+      "effects": [
+        "Nieuwe vertalingen"
+      ],
+      "themes": [
+        "filologie"
+      ],
       "period": "15e–16e eeuw"
     },
     "source_quote": "De kritiek op de Vulgaat als Bijbelvertaling."
@@ -467,11 +723,18 @@
     "id": 36,
     "question": "Welke Zwitserse hervormer legde nadruk op de symbolische interpretatie van het avondmaal?",
     "answer": "Huldrych Zwingli.",
+    "event": "Huldrych Zwingli legde als Zwitserse hervormer nadruk op de symbolische interpretatie van het avondmaal.",
     "timelineId": "zwingli_reformation",
     "context": {
-      "causes": ["Kritiek op mispraktijken"],
-      "effects": ["Zwitserse reformatie"],
-      "themes": ["sacramenten"],
+      "causes": [
+        "Kritiek op mispraktijken"
+      ],
+      "effects": [
+        "Zwitserse reformatie"
+      ],
+      "themes": [
+        "sacramenten"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "Huldrych Zwingli (1484–1531)."
@@ -480,11 +743,18 @@
     "id": 37,
     "question": "Welke hervormer ontwikkelde een sterk uitgewerkte leer van Gods soevereiniteit?",
     "answer": "Johannes Calvijn.",
+    "event": "Johannes Calvijn ontwikkelde als hervormer een sterk uitgewerkte leer van Gods soevereiniteit.",
     "timelineId": "calvin_reformation",
     "context": {
-      "causes": ["Zwitserse reformatie"],
-      "effects": ["Institutie van de Christelijke Religie"],
-      "themes": ["dogmatiek"],
+      "causes": [
+        "Zwitserse reformatie"
+      ],
+      "effects": [
+        "Institutie van de Christelijke Religie"
+      ],
+      "themes": [
+        "dogmatiek"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "Johannes Calvijn (1509–1564)."
@@ -493,11 +763,18 @@
     "id": 38,
     "question": "Welke beweging legde nadruk op persoonlijke vroomheid en Bijbelstudie?",
     "answer": "Het piëtisme.",
+    "event": "Het piëtisme legde nadruk op persoonlijke vroomheid en Bijbelstudie.",
     "timelineId": "pietism",
     "context": {
-      "causes": ["Onvrede met formeel geloof"],
-      "effects": ["Hernieuwde devotie"],
-      "themes": ["spiritualiteit"],
+      "causes": [
+        "Onvrede met formeel geloof"
+      ],
+      "effects": [
+        "Hernieuwde devotie"
+      ],
+      "themes": [
+        "spiritualiteit"
+      ],
       "period": "17e eeuw"
     },
     "source_quote": "Piëtisme."
@@ -506,11 +783,19 @@
     "id": 39,
     "question": "Welke Engelse beweging streefde naar verdere hervorming van de kerk?",
     "answer": "Het puritanisme.",
+    "event": "Het puritanisme was een Engelse beweging die streefde naar verdere hervorming van de kerk.",
     "timelineId": "puritanism",
     "context": {
-      "causes": ["Onvrede met anglicanisme"],
-      "effects": ["Migratie naar Amerika"],
-      "themes": ["kerk", "discipline"],
+      "causes": [
+        "Onvrede met anglicanisme"
+      ],
+      "effects": [
+        "Migratie naar Amerika"
+      ],
+      "themes": [
+        "kerk",
+        "discipline"
+      ],
       "period": "16e–17e eeuw"
     },
     "source_quote": "Puritanisme."
@@ -519,11 +804,19 @@
     "id": 40,
     "question": "Welke beweging benadrukte de rol van de Heilige Geest in de moderne tijd?",
     "answer": "Pentecostalisme.",
+    "event": "Pentecostalisme benadrukte de rol van de Heilige Geest in de moderne tijd.",
     "timelineId": "pentecostalism",
     "context": {
-      "causes": ["Opwekkingsbewegingen"],
-      "effects": ["Charismatische vernieuwing"],
-      "themes": ["geest", "ervaring"],
+      "causes": [
+        "Opwekkingsbewegingen"
+      ],
+      "effects": [
+        "Charismatische vernieuwing"
+      ],
+      "themes": [
+        "geest",
+        "ervaring"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Pentecostalisme en charismatische beweging."
@@ -532,11 +825,18 @@
     "id": 41,
     "question": "Welke beweging bekritiseerde de mogelijkheid van wonderen?",
     "answer": "De Verlichting.",
+    "event": "De Verlichting bekritiseerde de mogelijkheid van wonderen.",
     "timelineId": "enlightenment_critique",
     "context": {
-      "causes": ["Rationalisme"],
-      "effects": ["Scepsis over bovennatuurlijk"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Rationalisme"
+      ],
+      "effects": [
+        "Scepsis over bovennatuurlijk"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "18e eeuw"
     },
     "source_quote": "Kritiek op de mogelijkheid van wonderen."
@@ -545,11 +845,18 @@
     "id": 42,
     "question": "Welke beweging legde nadruk op sociale rechtvaardigheid in Latijns‑Amerika?",
     "answer": "Bevrijdingstheologie.",
+    "event": "Bevrijdingstheologie legde nadruk op sociale rechtvaardigheid in Latijns-Amerika.",
     "timelineId": "liberation_theology",
     "context": {
-      "causes": ["Armoede en onderdrukking"],
-      "effects": ["Contextuele theologie"],
-      "themes": ["rechtvaardigheid"],
+      "causes": [
+        "Armoede en onderdrukking"
+      ],
+      "effects": [
+        "Contextuele theologie"
+      ],
+      "themes": [
+        "rechtvaardigheid"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Bevrijdingstheologie."
@@ -558,11 +865,18 @@
     "id": 43,
     "question": "Welke beweging bekritiseerde de westerse theologie vanuit Afrikaans perspectief?",
     "answer": "Black Theology.",
+    "event": "Black Theology bekritiseerde de westerse theologie vanuit een Afrikaans perspectief.",
     "timelineId": "black_theology",
     "context": {
-      "causes": ["Raciale ongelijkheid"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["identiteit"],
+      "causes": [
+        "Raciale ongelijkheid"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "identiteit"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Black Theology."
@@ -571,11 +885,18 @@
     "id": 44,
     "question": "Welke beweging benadrukte de rol van traditie tegen moderniteit?",
     "answer": "Neo‑orthodoxie.",
+    "event": "Neo-orthodoxie benadrukte de rol van traditie tegenover moderniteit.",
     "timelineId": "neo_orthodoxy",
     "context": {
-      "causes": ["Kritiek op liberalisme"],
-      "effects": ["Herwaardering van openbaring"],
-      "themes": ["openbaring"],
+      "causes": [
+        "Kritiek op liberalisme"
+      ],
+      "effects": [
+        "Herwaardering van openbaring"
+      ],
+      "themes": [
+        "openbaring"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Neo‑orthodoxie."
@@ -584,11 +905,18 @@
     "id": 45,
     "question": "Welke beweging legde nadruk op lokale cultuur in theologie?",
     "answer": "Contextuele theologie.",
+    "event": "Contextuele theologie legde nadruk op lokale cultuur in de theologie.",
     "timelineId": "contextual_theology",
     "context": {
-      "causes": ["Globalisering"],
-      "effects": ["Lokale interpretaties"],
-      "themes": ["cultuur"],
+      "causes": [
+        "Globalisering"
+      ],
+      "effects": [
+        "Lokale interpretaties"
+      ],
+      "themes": [
+        "cultuur"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Theologie in de ontwikkelingslanden."
@@ -597,11 +925,18 @@
     "id": 46,
     "question": "Welke beweging legde nadruk op persoonlijke ervaring als bron van theologie?",
     "answer": "Vrijzinnig protestantisme.",
+    "event": "Vrijzinnig protestantisme legde nadruk op persoonlijke ervaring als bron van theologie.",
     "timelineId": "liberal_protestantism",
     "context": {
-      "causes": ["Moderniteit"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["ervaring"],
+      "causes": [
+        "Moderniteit"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "ervaring"
+      ],
       "period": "19e–20e eeuw"
     },
     "source_quote": "Vrijzinnig protestantisme."
@@ -610,11 +945,18 @@
     "id": 47,
     "question": "Welke beweging probeerde geloof en moderne wetenschap te verzoenen?",
     "answer": "Rooms‑katholiek modernisme.",
+    "event": "Rooms-katholiek modernisme probeerde geloof en moderne wetenschap te verzoenen.",
     "timelineId": "catholic_modernism",
     "context": {
-      "causes": ["Wetenschappelijke vooruitgang"],
-      "effects": ["Kerkelijke controverse"],
-      "themes": ["moderniteit"],
+      "causes": [
+        "Wetenschappelijke vooruitgang"
+      ],
+      "effects": [
+        "Kerkelijke controverse"
+      ],
+      "themes": [
+        "moderniteit"
+      ],
       "period": "19e–20e eeuw"
     },
     "source_quote": "Rooms‑katholiek modernisme."
@@ -623,11 +965,18 @@
     "id": 48,
     "question": "Welke theoloog ontwikkelde een theologie van hoop?",
     "answer": "Jürgen Moltmann.",
+    "event": "Jürgen Moltmann ontwikkelde een theologie van hoop.",
     "timelineId": "moltmann",
     "context": {
-      "causes": ["Na‑oorlogse crisis"],
-      "effects": ["Theologie van hoop"],
-      "themes": ["eschatologie"],
+      "causes": [
+        "Na‑oorlogse crisis"
+      ],
+      "effects": [
+        "Theologie van hoop"
+      ],
+      "themes": [
+        "eschatologie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Jürgen Moltmann."
@@ -636,11 +985,18 @@
     "id": 49,
     "question": "Welke theoloog legde nadruk op geschiedenis als openbaring?",
     "answer": "Wolfhart Pannenberg.",
+    "event": "Wolfhart Pannenberg legde nadruk op geschiedenis als openbaring.",
     "timelineId": "pannenberg",
     "context": {
-      "causes": ["Historische theologie"],
-      "effects": ["Openbaring in geschiedenis"],
-      "themes": ["openbaring"],
+      "causes": [
+        "Historische theologie"
+      ],
+      "effects": [
+        "Openbaring in geschiedenis"
+      ],
+      "themes": [
+        "openbaring"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Wolfhart Pannenberg."
@@ -649,11 +1005,18 @@
     "id": 50,
     "question": "Welke beweging legde nadruk op liturgie en traditie in de oosters‑orthodoxe kerk?",
     "answer": "Hesychasme.",
+    "event": "Hesychasme legde nadruk op liturgie en traditie in de oosters-orthodoxe kerk.",
     "timelineId": "hesychasm",
     "context": {
-      "causes": ["Monastieke spiritualiteit"],
-      "effects": ["Theosis‑theologie"],
-      "themes": ["spiritualiteit"],
+      "causes": [
+        "Monastieke spiritualiteit"
+      ],
+      "effects": [
+        "Theosis‑theologie"
+      ],
+      "themes": [
+        "spiritualiteit"
+      ],
       "period": "14e eeuw"
     },
     "source_quote": "De controverse over het hesychasme."
@@ -662,11 +1025,18 @@
     "id": 51,
     "question": "Welke rol speelde Justinus de Martelaar in de vroege kerk?",
     "answer": "Hij verdedigde het christelijk geloof tegenover heidense critici.",
+    "event": "Justinus de Martelaar verdedigde in de vroege kerk het christelijk geloof tegenover heidense critici.",
     "timelineId": "justin_martyr",
     "context": {
-      "causes": ["Vervolging en misverstanden over christenen"],
-      "effects": ["Ontwikkeling van apologetiek"],
-      "themes": ["apologetiek"],
+      "causes": [
+        "Vervolging en misverstanden over christenen"
+      ],
+      "effects": [
+        "Ontwikkeling van apologetiek"
+      ],
+      "themes": [
+        "apologetiek"
+      ],
       "period": "2e eeuw"
     },
     "source_quote": "Justinus de Martelaar verklaarde en verdedigde wat christenen geloofden."
@@ -675,11 +1045,18 @@
     "id": 52,
     "question": "Waarom was Origenes belangrijk voor de ontwikkeling van Bijbeluitleg?",
     "answer": "Hij ontwikkelde een systematische methode van allegorische exegese.",
+    "event": "Origenes was belangrijk voor de ontwikkeling van Bijbeluitleg omdat hij een systematische methode van allegorische exegese ontwikkelde.",
     "timelineId": "origen_exegesis",
     "context": {
-      "causes": ["Alexandrijnse filosofische traditie"],
-      "effects": ["Invloed op latere exegese"],
-      "themes": ["hermeneutiek"],
+      "causes": [
+        "Alexandrijnse filosofische traditie"
+      ],
+      "effects": [
+        "Invloed op latere exegese"
+      ],
+      "themes": [
+        "hermeneutiek"
+      ],
       "period": "3e eeuw"
     },
     "source_quote": "Origenes (ca. 185–ca. 254)."
@@ -688,11 +1065,19 @@
     "id": 53,
     "question": "Welke vraag stond centraal in de canonvorming van het Nieuwe Testament?",
     "answer": "Welke geschriften gezaghebbend waren voor de kerk.",
+    "event": "In de canonvorming van het Nieuwe Testament stond de vraag centraal welke geschriften gezaghebbend waren voor de kerk.",
     "timelineId": "nt_canon",
     "context": {
-      "causes": ["Gnostische geschriften", "Behoefte aan norm"],
-      "effects": ["Vaststelling van canon"],
-      "themes": ["canon"],
+      "causes": [
+        "Gnostische geschriften",
+        "Behoefte aan norm"
+      ],
+      "effects": [
+        "Vaststelling van canon"
+      ],
+      "themes": [
+        "canon"
+      ],
       "period": "2e–4e eeuw"
     },
     "source_quote": "De omvang van de canon van het Nieuwe Testament."
@@ -701,11 +1086,18 @@
     "id": 54,
     "question": "Welke controverse leidde tot het concilie van Nicea?",
     "answer": "De ariaanse controverse.",
+    "event": "De ariaanse controverse leidde tot het concilie van Nicea.",
     "timelineId": "council_nicea",
     "context": {
-      "causes": ["Discussie over Christus' goddelijkheid"],
-      "effects": ["Formulering van homoousios"],
-      "themes": ["christologie"],
+      "causes": [
+        "Discussie over Christus' goddelijkheid"
+      ],
+      "effects": [
+        "Formulering van homoousios"
+      ],
+      "themes": [
+        "christologie"
+      ],
       "period": "325"
     },
     "source_quote": "De ariaanse controverse over de dubbele aard van Jezus Christus."
@@ -714,11 +1106,19 @@
     "id": 55,
     "question": "Welke rol speelde Augustinus in de ontwikkeling van de genadeleer?",
     "answer": "Hij benadrukte de noodzaak van goddelijke genade tegen Pelagius.",
+    "event": "Augustinus speelde een rol in de ontwikkeling van de genadeleer door de noodzaak van goddelijke genade te benadrukken tegenover Pelagius.",
     "timelineId": "augustine_grace",
     "context": {
-      "causes": ["Pelagiaanse nadruk op vrije wil"],
-      "effects": ["Leer van erfzonde en genade"],
-      "themes": ["genade", "antropologie"],
+      "causes": [
+        "Pelagiaanse nadruk op vrije wil"
+      ],
+      "effects": [
+        "Leer van erfzonde en genade"
+      ],
+      "themes": [
+        "genade",
+        "antropologie"
+      ],
       "period": "4e–5e eeuw"
     },
     "source_quote": "De genadeleer en het conflict met de pelagianen."
@@ -727,11 +1127,18 @@
     "id": 56,
     "question": "Welke middeleeuwse beweging leidde tot de opkomst van universiteiten?",
     "answer": "De groei van kathedraalscholen.",
+    "event": "De groei van kathedraalscholen leidde in de middeleeuwen tot de opkomst van universiteiten.",
     "timelineId": "cathedral_schools",
     "context": {
-      "causes": ["Nood aan hoger onderwijs"],
-      "effects": ["Universitaire structuren"],
-      "themes": ["onderwijs"],
+      "causes": [
+        "Nood aan hoger onderwijs"
+      ],
+      "effects": [
+        "Universitaire structuren"
+      ],
+      "themes": [
+        "onderwijs"
+      ],
       "period": "11e–12e eeuw"
     },
     "source_quote": "De opkomst van het aan kathedralen gelieerde onderwijs."
@@ -740,11 +1147,18 @@
     "id": 57,
     "question": "Welke theoloog introduceerde de 'via moderna'?",
     "answer": "Willem van Ockham.",
+    "event": "Willem van Ockham introduceerde de 'via moderna'.",
     "timelineId": "ockham",
     "context": {
-      "causes": ["Kritiek op scholastiek"],
-      "effects": ["Nominalisme"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Kritiek op scholastiek"
+      ],
+      "effects": [
+        "Nominalisme"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "14e eeuw"
     },
     "source_quote": "Willem van Ockham (ca. 1285–1347)."
@@ -753,11 +1167,18 @@
     "id": 58,
     "question": "Welke beweging stimuleerde terugkeer naar de oorspronkelijke Bijbelteksten?",
     "answer": "Het renaissancehumanisme.",
+    "event": "Het renaissancehumanisme stimuleerde de terugkeer naar de oorspronkelijke Bijbelteksten.",
     "timelineId": "renaissance_humanism",
     "context": {
-      "causes": ["Filologische interesse"],
-      "effects": ["Nieuwe vertalingen"],
-      "themes": ["filologie"],
+      "causes": [
+        "Filologische interesse"
+      ],
+      "effects": [
+        "Nieuwe vertalingen"
+      ],
+      "themes": [
+        "filologie"
+      ],
       "period": "15e eeuw"
     },
     "source_quote": "Terugkeer naar de directe bronnen van de christelijke theologie."
@@ -766,11 +1187,18 @@
     "id": 59,
     "question": "Welke hervormer schreef de 'Institutie van de Christelijke Religie'?",
     "answer": "Johannes Calvijn.",
+    "event": "Johannes Calvijn schreef als hervormer de 'Institutie van de Christelijke Religie'.",
     "timelineId": "calvin_institutes",
     "context": {
-      "causes": ["Behoefte aan systematische uitleg"],
-      "effects": ["Invloed op gereformeerde traditie"],
-      "themes": ["dogmatiek"],
+      "causes": [
+        "Behoefte aan systematische uitleg"
+      ],
+      "effects": [
+        "Invloed op gereformeerde traditie"
+      ],
+      "themes": [
+        "dogmatiek"
+      ],
       "period": "1536"
     },
     "source_quote": "Johannes Calvijn (1509–1564)."
@@ -779,11 +1207,18 @@
     "id": 60,
     "question": "Welke beweging benadrukte radicale navolging en volwassenendoop?",
     "answer": "De wederdopers.",
+    "event": "De wederdopers benadrukten radicale navolging van Christus en de volwassenendoop.",
     "timelineId": "anabaptists",
     "context": {
-      "causes": ["Onvrede met gematigde hervormingen"],
-      "effects": ["Vervolging en diaspora"],
-      "themes": ["discipelschap"],
+      "causes": [
+        "Onvrede met gematigde hervormingen"
+      ],
+      "effects": [
+        "Vervolging en diaspora"
+      ],
+      "themes": [
+        "discipelschap"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "De radicale reformatie van de wederdopers."
@@ -792,11 +1227,19 @@
     "id": 61,
     "question": "Welke beweging leidde tot confessionalisering in Europa?",
     "answer": "De tweede reformatie.",
+    "event": "De tweede reformatie leidde tot confessionalisering in Europa.",
     "timelineId": "confessionalization",
     "context": {
-      "causes": ["Politieke en religieuze spanningen"],
-      "effects": ["Vastlegging van belijdenissen"],
-      "themes": ["kerk", "politiek"],
+      "causes": [
+        "Politieke en religieuze spanningen"
+      ],
+      "effects": [
+        "Vastlegging van belijdenissen"
+      ],
+      "themes": [
+        "kerk",
+        "politiek"
+      ],
       "period": "16e–17e eeuw"
     },
     "source_quote": "De tweede reformatie – confessionalisering."
@@ -805,11 +1248,18 @@
     "id": 62,
     "question": "Welke beweging legde nadruk op persoonlijke bekering en heiliging?",
     "answer": "Het methodisme.",
+    "event": "Het methodisme legde nadruk op persoonlijke bekering en heiliging.",
     "timelineId": "methodism",
     "context": {
-      "causes": ["Reactie op formeel geloof"],
-      "effects": ["Opwekkingsbewegingen"],
-      "themes": ["spiritualiteit"],
+      "causes": [
+        "Reactie op formeel geloof"
+      ],
+      "effects": [
+        "Opwekkingsbewegingen"
+      ],
+      "themes": [
+        "spiritualiteit"
+      ],
       "period": "18e eeuw"
     },
     "source_quote": "Stromingen die op de reformatie volgden."
@@ -818,11 +1268,18 @@
     "id": 63,
     "question": "Welke beweging bekritiseerde de mogelijkheid van wonderen?",
     "answer": "De Verlichting.",
+    "event": "De Verlichting bekritiseerde de mogelijkheid van wonderen.",
     "timelineId": "enlightenment_critique",
     "context": {
-      "causes": ["Rationalisme"],
-      "effects": ["Scepsis over bovennatuurlijk"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Rationalisme"
+      ],
+      "effects": [
+        "Scepsis over bovennatuurlijk"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "18e eeuw"
     },
     "source_quote": "Kritiek op de mogelijkheid van wonderen."
@@ -831,11 +1288,18 @@
     "id": 64,
     "question": "Welke theoloog legde nadruk op religieuze ervaring als kern van geloof?",
     "answer": "Schleiermacher.",
+    "event": "Schleiermacher legde nadruk op religieuze ervaring als kern van het geloof.",
     "timelineId": "schleiermacher",
     "context": {
-      "causes": ["Romantiek"],
-      "effects": ["Theologie van gevoel"],
-      "themes": ["ervaring"],
+      "causes": [
+        "Romantiek"
+      ],
+      "effects": [
+        "Theologie van gevoel"
+      ],
+      "themes": [
+        "ervaring"
+      ],
       "period": "19e eeuw"
     },
     "source_quote": "Friedrich Schleiermacher."
@@ -844,11 +1308,18 @@
     "id": 65,
     "question": "Welke beweging reageerde tegen het modernisme met nadruk op openbaring?",
     "answer": "Neo‑orthodoxie.",
+    "event": "Neo-orthodoxie reageerde tegen het modernisme met nadruk op openbaring.",
     "timelineId": "neo_orthodoxy",
     "context": {
-      "causes": ["Kritiek op liberalisme"],
-      "effects": ["Herwaardering van Schrift"],
-      "themes": ["openbaring"],
+      "causes": [
+        "Kritiek op liberalisme"
+      ],
+      "effects": [
+        "Herwaardering van Schrift"
+      ],
+      "themes": [
+        "openbaring"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Neo‑orthodoxie."
@@ -857,11 +1328,18 @@
     "id": 66,
     "question": "Welke beweging legde nadruk op liturgie en mystiek in de oosterse kerk?",
     "answer": "Hesychasme.",
+    "event": "Hesychasme legde nadruk op liturgie en mystiek in de oosterse kerk.",
     "timelineId": "hesychasm",
     "context": {
-      "causes": ["Monastieke traditie"],
-      "effects": ["Theosis‑theologie"],
-      "themes": ["spiritualiteit"],
+      "causes": [
+        "Monastieke traditie"
+      ],
+      "effects": [
+        "Theosis‑theologie"
+      ],
+      "themes": [
+        "spiritualiteit"
+      ],
       "period": "14e eeuw"
     },
     "source_quote": "De controverse over het hesychasme."
@@ -870,11 +1348,18 @@
     "id": 67,
     "question": "Welke beweging legde nadruk op sociale bevrijding in theologie?",
     "answer": "Bevrijdingstheologie.",
+    "event": "Bevrijdingstheologie legde nadruk op sociale bevrijding in de theologie.",
     "timelineId": "liberation_theology",
     "context": {
-      "causes": ["Armoede en onderdrukking"],
-      "effects": ["Contextuele theologie"],
-      "themes": ["rechtvaardigheid"],
+      "causes": [
+        "Armoede en onderdrukking"
+      ],
+      "effects": [
+        "Contextuele theologie"
+      ],
+      "themes": [
+        "rechtvaardigheid"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Bevrijdingstheologie."
@@ -883,11 +1368,18 @@
     "id": 68,
     "question": "Welke beweging bekritiseerde westerse theologie vanuit Afrikaans perspectief?",
     "answer": "Black Theology.",
+    "event": "Black Theology bekritiseerde de westerse theologie vanuit een Afrikaans perspectief.",
     "timelineId": "black_theology",
     "context": {
-      "causes": ["Raciale ongelijkheid"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["identiteit"],
+      "causes": [
+        "Raciale ongelijkheid"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "identiteit"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Black Theology."
@@ -896,11 +1388,18 @@
     "id": 69,
     "question": "Welke beweging benadrukte de rol van vrouwen in theologie?",
     "answer": "Feministische theologie.",
+    "event": "Feministische theologie benadrukte de rol van vrouwen in de theologie.",
     "timelineId": "feminist_theology",
     "context": {
-      "causes": ["Kritiek op patriarchale structuren"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["gender"],
+      "causes": [
+        "Kritiek op patriarchale structuren"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "gender"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Het feminisme."
@@ -909,11 +1408,18 @@
     "id": 70,
     "question": "Welke beweging legde nadruk op liturgie en traditie in de orthodoxe kerk?",
     "answer": "Byzantijnse theologie.",
+    "event": "Byzantijnse theologie legde nadruk op liturgie en traditie in de orthodoxe kerk.",
     "timelineId": "byzantine_theology",
     "context": {
-      "causes": ["Oosterse traditie"],
-      "effects": ["Iconografie en liturgie"],
-      "themes": ["traditie"],
+      "causes": [
+        "Oosterse traditie"
+      ],
+      "effects": [
+        "Iconografie en liturgie"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "700–1453"
     },
     "source_quote": "Byzantijnse theologie."
@@ -922,11 +1428,18 @@
     "id": 71,
     "question": "Welke controverse draaide om het gebruik van iconen?",
     "answer": "Het iconoclasme.",
+    "event": "Het iconoclasme draaide om de controverse over het gebruik van iconen.",
     "timelineId": "iconoclasm",
     "context": {
-      "causes": ["Discussie over beeldenverering"],
-      "effects": ["Bevestiging van iconen"],
-      "themes": ["beeldcultuur"],
+      "causes": [
+        "Discussie over beeldenverering"
+      ],
+      "effects": [
+        "Bevestiging van iconen"
+      ],
+      "themes": [
+        "beeldcultuur"
+      ],
       "period": "8e–9e eeuw"
     },
     "source_quote": "De controverse over het iconoclasme."
@@ -935,11 +1448,18 @@
     "id": 72,
     "question": "Welke gebeurtenis markeerde het einde van het Byzantijnse rijk?",
     "answer": "De val van Constantinopel.",
+    "event": "De val van Constantinopel markeerde het einde van het Byzantijnse rijk.",
     "timelineId": "fall_constantinople",
     "context": {
-      "causes": ["Ottomaanse expansie"],
-      "effects": ["Einde Byzantijnse theologie"],
-      "themes": ["politiek"],
+      "causes": [
+        "Ottomaanse expansie"
+      ],
+      "effects": [
+        "Einde Byzantijnse theologie"
+      ],
+      "themes": [
+        "politiek"
+      ],
       "period": "1453"
     },
     "source_quote": "De val van Constantinopel."
@@ -948,11 +1468,18 @@
     "id": 73,
     "question": "Welke beweging legde nadruk op rationele kritiek op religie?",
     "answer": "Het modernisme.",
+    "event": "Het modernisme legde nadruk op rationele kritiek op religie.",
     "timelineId": "modernism",
     "context": {
-      "causes": ["Verlichting"],
-      "effects": ["Nieuwe hermeneutiek"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Verlichting"
+      ],
+      "effects": [
+        "Nieuwe hermeneutiek"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "19e–20e eeuw"
     },
     "source_quote": "Het modernisme, een nieuwe intellectuele omgeving."
@@ -961,11 +1488,18 @@
     "id": 74,
     "question": "Welke beweging legde nadruk op verbeelding en gevoel in theologie?",
     "answer": "De romantiek.",
+    "event": "De romantiek legde nadruk op verbeelding en gevoel in de theologie.",
     "timelineId": "romantic_theology",
     "context": {
-      "causes": ["Reactie op rationalisme"],
-      "effects": ["Nieuwe vormen van geloofsbeleving"],
-      "themes": ["ervaring"],
+      "causes": [
+        "Reactie op rationalisme"
+      ],
+      "effects": [
+        "Nieuwe vormen van geloofsbeleving"
+      ],
+      "themes": [
+        "ervaring"
+      ],
       "period": "19e eeuw"
     },
     "source_quote": "De romantiek en de hernieuwde theologische verbeeldingskracht."
@@ -974,11 +1508,18 @@
     "id": 75,
     "question": "Welke beweging legde nadruk op traditie tegen moderniteit?",
     "answer": "Radicale orthodoxie.",
+    "event": "Radicale orthodoxie legde nadruk op traditie tegenover moderniteit.",
     "timelineId": "radical_orthodoxy",
     "context": {
-      "causes": ["Kritiek op secularisme"],
-      "effects": ["Herwaardering van klassieke bronnen"],
-      "themes": ["traditie"],
+      "causes": [
+        "Kritiek op secularisme"
+      ],
+      "effects": [
+        "Herwaardering van klassieke bronnen"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Radicale orthodoxie."
@@ -987,11 +1528,19 @@
     "id": 76,
     "question": "Welke rol speelde Erasmus in de renaissance‑theologie?",
     "answer": "Hij bevorderde terugkeer naar de oorspronkelijke Bijbelteksten.",
+    "event": "Erasmus bevorderde in de renaissance-theologie de terugkeer naar de oorspronkelijke Bijbelteksten.",
     "timelineId": "erasmus_humanism",
     "context": {
-      "causes": ["Humanistische filologie"],
-      "effects": ["Nieuwe Griekse edities van het Nieuwe Testament"],
-      "themes": ["humanisme", "filologie"],
+      "causes": [
+        "Humanistische filologie"
+      ],
+      "effects": [
+        "Nieuwe Griekse edities van het Nieuwe Testament"
+      ],
+      "themes": [
+        "humanisme",
+        "filologie"
+      ],
       "period": "15e–16e eeuw"
     },
     "source_quote": "Desiderius Erasmus (ca. 1469–1536)."
@@ -1000,11 +1549,19 @@
     "id": 77,
     "question": "Welke middeleeuwse theoloog ontwikkelde een argument voor Gods bestaan gebaseerd op logica?",
     "answer": "Anselmus van Canterbury.",
+    "event": "Anselmus van Canterbury ontwikkelde als middeleeuws theoloog een argument voor Gods bestaan gebaseerd op logica.",
     "timelineId": "anselm_ontological",
     "context": {
-      "causes": ["Scholastieke zoektocht naar rationele theologie"],
-      "effects": ["Ontologisch godsbewijs"],
-      "themes": ["filosofie", "godsbewijzen"],
+      "causes": [
+        "Scholastieke zoektocht naar rationele theologie"
+      ],
+      "effects": [
+        "Ontologisch godsbewijs"
+      ],
+      "themes": [
+        "filosofie",
+        "godsbewijzen"
+      ],
       "period": "11e eeuw"
     },
     "source_quote": "Anselmus van Canterbury (ca. 1033–1109)."
@@ -1013,11 +1570,19 @@
     "id": 78,
     "question": "Welke theoloog benadrukte de absolute vrijheid van God in zijn denken?",
     "answer": "Duns Scotus.",
+    "event": "Duns Scotus benadrukte in zijn denken de absolute vrijheid van God.",
     "timelineId": "duns_scotus",
     "context": {
-      "causes": ["Discussies binnen scholastiek"],
-      "effects": ["Vrijheidsleer en voluntarisme"],
-      "themes": ["filosofie", "theologie"],
+      "causes": [
+        "Discussies binnen scholastiek"
+      ],
+      "effects": [
+        "Vrijheidsleer en voluntarisme"
+      ],
+      "themes": [
+        "filosofie",
+        "theologie"
+      ],
       "period": "13e–14e eeuw"
     },
     "source_quote": "Duns Scotus (ca. 1265–1308)."
@@ -1026,11 +1591,18 @@
     "id": 79,
     "question": "Welke beweging leidde tot de ontwikkeling van sacramentstheologie in de middeleeuwen?",
     "answer": "De scholastiek.",
+    "event": "De scholastiek leidde in de middeleeuwen tot de ontwikkeling van de sacramentstheologie.",
     "timelineId": "scholastic_sacramental",
     "context": {
-      "causes": ["Systematisering van theologie"],
-      "effects": ["Definitie van zeven sacramenten"],
-      "themes": ["sacramenten"],
+      "causes": [
+        "Systematisering van theologie"
+      ],
+      "effects": [
+        "Definitie van zeven sacramenten"
+      ],
+      "themes": [
+        "sacramenten"
+      ],
       "period": "12e–13e eeuw"
     },
     "source_quote": "De ontwikkeling van de sacramentstheologie."
@@ -1039,11 +1611,19 @@
     "id": 80,
     "question": "Welke hervormer speelde een centrale rol in de Engelse reformatie?",
     "answer": "Thomas Cranmer.",
+    "event": "Thomas Cranmer speelde een centrale rol in de Engelse reformatie.",
     "timelineId": "english_reformation",
     "context": {
-      "causes": ["Breuk met Rome"],
-      "effects": ["Book of Common Prayer"],
-      "themes": ["liturgie", "kerk"],
+      "causes": [
+        "Breuk met Rome"
+      ],
+      "effects": [
+        "Book of Common Prayer"
+      ],
+      "themes": [
+        "liturgie",
+        "kerk"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "De Engelse reformatie – het anglicanisme."
@@ -1052,11 +1632,18 @@
     "id": 81,
     "question": "Welke beweging legde nadruk op catechismussen als onderwijsmiddel?",
     "answer": "De gereformeerde traditie.",
+    "event": "De gereformeerde traditie legde nadruk op catechismussen als onderwijsmiddel.",
     "timelineId": "reformed_catechisms",
     "context": {
-      "causes": ["Nood aan onderwijs"],
-      "effects": ["Heidelbergse Catechismus"],
-      "themes": ["onderwijs"],
+      "causes": [
+        "Nood aan onderwijs"
+      ],
+      "effects": [
+        "Heidelbergse Catechismus"
+      ],
+      "themes": [
+        "onderwijs"
+      ],
       "period": "16e eeuw"
     },
     "source_quote": "Catechismussen."
@@ -1065,11 +1652,19 @@
     "id": 82,
     "question": "Welke beweging leidde tot de productie van vele geloofsbelijdenissen?",
     "answer": "De confessionalisering.",
+    "event": "De confessionalisering leidde tot de productie van vele geloofsbelijdenissen.",
     "timelineId": "confessionalization",
     "context": {
-      "causes": ["Politieke en religieuze scheiding"],
-      "effects": ["Confessionele identiteiten"],
-      "themes": ["kerk", "identiteit"],
+      "causes": [
+        "Politieke en religieuze scheiding"
+      ],
+      "effects": [
+        "Confessionele identiteiten"
+      ],
+      "themes": [
+        "kerk",
+        "identiteit"
+      ],
       "period": "16e–17e eeuw"
     },
     "source_quote": "Geloofsbelijdenissen."
@@ -1078,11 +1673,18 @@
     "id": 83,
     "question": "Welke theoloog schreef invloedrijke preken tijdens de Great Awakening?",
     "answer": "Jonathan Edwards.",
+    "event": "Jonathan Edwards schreef invloedrijke preken tijdens de Great Awakening.",
     "timelineId": "great_awakening",
     "context": {
-      "causes": ["Opwekkingsbewegingen"],
-      "effects": ["Nieuwe nadruk op bekering"],
-      "themes": ["spiritualiteit"],
+      "causes": [
+        "Opwekkingsbewegingen"
+      ],
+      "effects": [
+        "Nieuwe nadruk op bekering"
+      ],
+      "themes": [
+        "spiritualiteit"
+      ],
       "period": "18e eeuw"
     },
     "source_quote": "Jonathan Edwards (1703–1758)."
@@ -1091,11 +1693,18 @@
     "id": 84,
     "question": "Welke beweging bekritiseerde de kerkelijke traditie vanuit een rationeel perspectief?",
     "answer": "Het rationalisme.",
+    "event": "Het rationalisme bekritiseerde de kerkelijke traditie vanuit een rationeel perspectief.",
     "timelineId": "rationalism",
     "context": {
-      "causes": ["Verlichting"],
-      "effects": ["Kritiek op dogma"],
-      "themes": ["filosofie"],
+      "causes": [
+        "Verlichting"
+      ],
+      "effects": [
+        "Kritiek op dogma"
+      ],
+      "themes": [
+        "filosofie"
+      ],
       "period": "17e–18e eeuw"
     },
     "source_quote": "Het modernisme, een nieuwe intellectuele omgeving."
@@ -1104,11 +1713,18 @@
     "id": 85,
     "question": "Welke beweging stelde dat religie vooral een morele functie heeft?",
     "answer": "Het liberalisme.",
+    "event": "Het liberalisme stelde dat religie vooral een morele functie heeft.",
     "timelineId": "liberal_theology",
     "context": {
-      "causes": ["Verlichting en moderniteit"],
-      "effects": ["Morele interpretatie van geloof"],
-      "themes": ["ethiek"],
+      "causes": [
+        "Verlichting en moderniteit"
+      ],
+      "effects": [
+        "Morele interpretatie van geloof"
+      ],
+      "themes": [
+        "ethiek"
+      ],
       "period": "19e eeuw"
     },
     "source_quote": "Vrijzinnig protestantisme."
@@ -1117,11 +1733,19 @@
     "id": 86,
     "question": "Welke theoloog ontwikkelde een systeem waarin cultuur en geloof elkaar interpreteren?",
     "answer": "Paul Tillich.",
+    "event": "Paul Tillich ontwikkelde een systeem waarin cultuur en geloof elkaar interpreteren.",
     "timelineId": "tillich",
     "context": {
-      "causes": ["Existentialisme"],
-      "effects": ["Correlatiemethode"],
-      "themes": ["cultuur", "filosofie"],
+      "causes": [
+        "Existentialisme"
+      ],
+      "effects": [
+        "Correlatiemethode"
+      ],
+      "themes": [
+        "cultuur",
+        "filosofie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Paul Tillich."
@@ -1130,11 +1754,19 @@
     "id": 87,
     "question": "Welke theoloog benadrukte de anonieme christen?",
     "answer": "Karl Rahner.",
+    "event": "Karl Rahner benadrukte het concept van de anonieme christen.",
     "timelineId": "rahner",
     "context": {
-      "causes": ["Moderne antropologie"],
-      "effects": ["Inclusieve soteriologie"],
-      "themes": ["antropologie", "soteriologie"],
+      "causes": [
+        "Moderne antropologie"
+      ],
+      "effects": [
+        "Inclusieve soteriologie"
+      ],
+      "themes": [
+        "antropologie",
+        "soteriologie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Karl Rahner."
@@ -1143,11 +1775,18 @@
     "id": 88,
     "question": "Welke theoloog legde nadruk op schoonheid als theologisch principe?",
     "answer": "Hans Urs von Balthasar.",
+    "event": "Hans Urs von Balthasar legde nadruk op schoonheid als theologisch principe.",
     "timelineId": "balthasar",
     "context": {
-      "causes": ["Kritiek op rationalisme"],
-      "effects": ["Theologische esthetiek"],
-      "themes": ["esthetiek"],
+      "causes": [
+        "Kritiek op rationalisme"
+      ],
+      "effects": [
+        "Theologische esthetiek"
+      ],
+      "themes": [
+        "esthetiek"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Hans Urs von Balthasar."
@@ -1156,11 +1795,18 @@
     "id": 89,
     "question": "Welke beweging legde nadruk op liturgie en traditie in de orthodoxe kerken?",
     "answer": "De oosters‑orthodoxe traditie.",
+    "event": "De oosters-orthodoxe traditie legde nadruk op liturgie en traditie in de orthodoxe kerken.",
     "timelineId": "orthodox_tradition",
     "context": {
-      "causes": ["Byzantijnse erfenis"],
-      "effects": ["Liturgische continuïteit"],
-      "themes": ["traditie"],
+      "causes": [
+        "Byzantijnse erfenis"
+      ],
+      "effects": [
+        "Liturgische continuïteit"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "vanaf 4e eeuw"
     },
     "source_quote": "De orthodoxe kerken."
@@ -1169,11 +1815,19 @@
     "id": 90,
     "question": "Welke beweging legde nadruk op persoonlijke ervaring van de Heilige Geest?",
     "answer": "De charismatische beweging.",
+    "event": "De charismatische beweging legde nadruk op persoonlijke ervaring van de Heilige Geest.",
     "timelineId": "charismatic_movement",
     "context": {
-      "causes": ["Pentecostale invloed"],
-      "effects": ["Vernieuwing in kerken"],
-      "themes": ["ervaring", "geest"],
+      "causes": [
+        "Pentecostale invloed"
+      ],
+      "effects": [
+        "Vernieuwing in kerken"
+      ],
+      "themes": [
+        "ervaring",
+        "geest"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Pentecostalisme en charismatische beweging."
@@ -1182,11 +1836,18 @@
     "id": 91,
     "question": "Welke beweging bekritiseerde de westerse theologie vanuit Indiaas perspectief?",
     "answer": "Indiase contextuele theologie.",
+    "event": "Indiase contextuele theologie bekritiseerde de westerse theologie vanuit een Indiaas perspectief.",
     "timelineId": "indian_theology",
     "context": {
-      "causes": ["Koloniale geschiedenis"],
-      "effects": ["Nieuwe interpretaties van Christus"],
-      "themes": ["cultuur"],
+      "causes": [
+        "Koloniale geschiedenis"
+      ],
+      "effects": [
+        "Nieuwe interpretaties van Christus"
+      ],
+      "themes": [
+        "cultuur"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "India."
@@ -1195,11 +1856,18 @@
     "id": 92,
     "question": "Welke beweging benadrukte de rol van gemeenschap in geloofsinterpretatie?",
     "answer": "Postliberalisme.",
+    "event": "Postliberalisme benadrukte de rol van gemeenschap in de interpretatie van het geloof.",
     "timelineId": "postliberalism",
     "context": {
-      "causes": ["Kritiek op individualisme"],
-      "effects": ["Narratieve theologie"],
-      "themes": ["gemeenschap"],
+      "causes": [
+        "Kritiek op individualisme"
+      ],
+      "effects": [
+        "Narratieve theologie"
+      ],
+      "themes": [
+        "gemeenschap"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Postliberalisme."
@@ -1208,11 +1876,18 @@
     "id": 93,
     "question": "Welke beweging legde nadruk op de rol van traditie tegen moderniteit?",
     "answer": "Radicale orthodoxie.",
+    "event": "Radicale orthodoxie legde nadruk op de rol van traditie tegenover moderniteit.",
     "timelineId": "radical_orthodoxy",
     "context": {
-      "causes": ["Kritiek op secularisme"],
-      "effects": ["Herwaardering van klassieke bronnen"],
-      "themes": ["traditie"],
+      "causes": [
+        "Kritiek op secularisme"
+      ],
+      "effects": [
+        "Herwaardering van klassieke bronnen"
+      ],
+      "themes": [
+        "traditie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Radicale orthodoxie."
@@ -1221,11 +1896,18 @@
     "id": 94,
     "question": "Welke beweging legde nadruk op de rol van liturgie in geloofsopbouw?",
     "answer": "Liturgische beweging.",
+    "event": "De liturgische beweging legde nadruk op de rol van liturgie in geloofsopbouw.",
     "timelineId": "liturgical_movement",
     "context": {
-      "causes": ["Vernieuwing van eredienst"],
-      "effects": ["Hervormde liturgieën"],
-      "themes": ["liturgie"],
+      "causes": [
+        "Vernieuwing van eredienst"
+      ],
+      "effects": [
+        "Hervormde liturgieën"
+      ],
+      "themes": [
+        "liturgie"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Enkele recente ontwikkelingen uit de westerse theologie."
@@ -1234,11 +1916,18 @@
     "id": 95,
     "question": "Welke beweging legde nadruk op hermeneutiek als kern van theologie?",
     "answer": "Hermeneutische theologie.",
+    "event": "Hermeneutische theologie legde nadruk op hermeneutiek als kern van de theologie.",
     "timelineId": "hermeneutic_theology",
     "context": {
-      "causes": ["Moderne interpretatietheorie"],
-      "effects": ["Nieuwe Bijbeluitleg"],
-      "themes": ["hermeneutiek"],
+      "causes": [
+        "Moderne interpretatietheorie"
+      ],
+      "effects": [
+        "Nieuwe Bijbeluitleg"
+      ],
+      "themes": [
+        "hermeneutiek"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "De status en interpretatie van de Schrift."
@@ -1247,11 +1936,18 @@
     "id": 96,
     "question": "Welke beweging legde nadruk op de rol van cultuur in theologie?",
     "answer": "Culturele theologie.",
+    "event": "Culturele theologie legde nadruk op de rol van cultuur in de theologie.",
     "timelineId": "cultural_theology",
     "context": {
-      "causes": ["Globalisering"],
-      "effects": ["Culturele interpretaties van geloof"],
-      "themes": ["cultuur"],
+      "causes": [
+        "Globalisering"
+      ],
+      "effects": [
+        "Culturele interpretaties van geloof"
+      ],
+      "themes": [
+        "cultuur"
+      ],
       "period": "20e eeuw"
     },
     "source_quote": "Theologie in de ontwikkelingslanden."
@@ -1260,11 +1956,18 @@
     "id": 97,
     "question": "Welke beweging legde nadruk op de rol van geschiedenis in openbaring?",
     "answer": "Historische theologie.",
+    "event": "Historische theologie legde nadruk op de rol van geschiedenis in openbaring.",
     "timelineId": "historical_theology",
     "context": {
-      "causes": ["Historische kritiek"],
-      "effects": ["Nieuwe interpretatie van dogma"],
-      "themes": ["geschiedenis"],
+      "causes": [
+        "Historische kritiek"
+      ],
+      "effects": [
+        "Nieuwe interpretatie van dogma"
+      ],
+      "themes": [
+        "geschiedenis"
+      ],
       "period": "19e–20e eeuw"
     },
     "source_quote": "Het probleem van het kwaad."
@@ -1273,11 +1976,18 @@
     "id": 98,
     "question": "Welke beweging legde nadruk op de rol van rede in geloofsverdediging?",
     "answer": "Naturalistische theologie.",
+    "event": "Naturalistische theologie legde nadruk op de rol van de rede in de geloofsverdediging.",
     "timelineId": "natural_theology",
     "context": {
-      "causes": ["Wetenschappelijke vooruitgang"],
-      "effects": ["Nieuwe argumenten voor God"],
-      "themes": ["rede"],
+      "causes": [
+        "Wetenschappelijke vooruitgang"
+      ],
+      "effects": [
+        "Nieuwe argumenten voor God"
+      ],
+      "themes": [
+        "rede"
+      ],
       "period": "18e–19e eeuw"
     },
     "source_quote": "De verkenning van de rol van de rede in de theologie."
@@ -1286,11 +1996,18 @@
     "id": 99,
     "question": "Welke beweging legde nadruk op de rol van ervaring in geloofsbeleving?",
     "answer": "Evangelicalisme.",
+    "event": "Evangelicalisme legde nadruk op de rol van ervaring in de geloofsbeleving.",
     "timelineId": "evangelicalism",
     "context": {
-      "causes": ["Opwekkingsbewegingen"],
-      "effects": ["Focus op bekering en Schrift"],
-      "themes": ["ervaring"],
+      "causes": [
+        "Opwekkingsbewegingen"
+      ],
+      "effects": [
+        "Focus op bekering en Schrift"
+      ],
+      "themes": [
+        "ervaring"
+      ],
       "period": "18e–21e eeuw"
     },
     "source_quote": "Evangelicalisme."
@@ -1299,15 +2016,21 @@
     "id": 100,
     "question": "Welke beweging legde nadruk op de rol van de Heilige Geest in wereldwijde groei van het christendom?",
     "answer": "Pentecostalisme.",
+    "event": "Pentecostalisme legde nadruk op de rol van de Heilige Geest in de wereldwijde groei van het christendom.",
     "timelineId": "pentecostalism",
     "context": {
-      "causes": ["Opwekkingen in de 20e eeuw"],
-      "effects": ["Snelle wereldwijde groei"],
-      "themes": ["geest", "missie"],
+      "causes": [
+        "Opwekkingen in de 20e eeuw"
+      ],
+      "effects": [
+        "Snelle wereldwijde groei"
+      ],
+      "themes": [
+        "geest",
+        "missie"
+      ],
       "period": "20e–21e eeuw"
     },
     "source_quote": "Pentecostalisme en charismatische beweging."
   }
 ]
-
-
