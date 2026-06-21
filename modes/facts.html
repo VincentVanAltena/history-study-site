@@ -2,29 +2,32 @@
 <html lang="nl">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Feiten oefenen</title>
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
-<h1>Feiten oefenen</h1>
+<main class="container">
+  <h1>Feiten oefenen</h1>
 
-<div class="menu">
-  <a href="#" id="startFlashcards">Flashcards</a>
-  <a href="#" id="startQuiz">Adaptieve Quiz</a>
-</div>
+  <nav class="menu" aria-label="Keuze feiten">
+    <a href="#" id="startFlashcards">Flashcards</a>
+    <a href="#" id="startQuiz">Adaptieve Quiz</a>
+  </nav>
 
-<div id="quizContainer" style="display:none;">
-  <h2 id="question"></h2>
-  <input id="answerInput" placeholder="Typ je antwoord...">
-  <button id="submitAnswer">Controleer</button>
-  <p id="feedback"></p>
-</div>
+  <div id="quizContainer" style="display:none;">
+    <h2 id="question"></h2>
+    <input id="answerInput" placeholder="Typ je antwoord...">
+    <button id="submitAnswer">Controleer</button>
+    <p id="feedback"></p>
+  </div>
 
-<div id="contextPanel" class="context-panel" style="display:none;">
-  <h2>Context</h2>
-  <div id="contextContent"></div>
-</div>
+  <div id="contextPanel" class="context-panel" style="display:none;">
+    <h2>Context</h2>
+    <div id="contextContent"></div>
+  </div>
+</main>
 
 <script src="../js/flashcards.js"></script>
 <script src="../js/adaptive_quiz.js"></script>
