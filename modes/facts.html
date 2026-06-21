@@ -16,7 +16,17 @@
     <a href="#" id="startQuiz">Adaptieve Quiz</a>
   </nav>
 
-  <div id="quizContainer" style="display:none;">
+  <!-- Flashcard UI (used by js/flashcard.js) -->
+  <div id="flashcardContainer" style="display:none; margin-top:12px;">
+    <div id="flashcard" class="context-panel" style="font-size:1.1rem; padding:18px; min-height:80px; display:flex; align-items:center; justify-content:center;"></div>
+    <div style="margin-top:8px; display:flex; gap:8px;">
+      <button id="showAnswer">Toon antwoord</button>
+      <button id="next">Volgende</button>
+    </div>
+  </div>
+
+  <!-- Existing quiz container -->
+  <div id="quizContainer" style="display:none; margin-top:12px;">
     <h2 id="question"></h2>
     <input id="answerInput" placeholder="Typ je antwoord...">
     <button id="submitAnswer">Controleer</button>
@@ -29,7 +39,21 @@
   </div>
 </main>
 
-<script src="../js/flashcards.js"></script>
+<script src="../js/flashcard.js"></script>
 <script src="../js/adaptive_quiz.js"></script>
+<script>
+  // Show/hide appropriate UI when menu buttons are clicked
+  document.getElementById('startFlashcards').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('flashcardContainer').style.display = 'block';
+    document.getElementById('quizContainer').style.display = 'none';
+  });
+
+  document.getElementById('startQuiz').addEventListener('click', function (e) {
+    e.preventDefault();
+    document.getElementById('quizContainer').style.display = 'block';
+    document.getElementById('flashcardContainer').style.display = 'none';
+  });
+</script>
 </body>
 </html>
