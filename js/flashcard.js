@@ -25,15 +25,40 @@
     showCard();
   }
 
+  async function tryLoadData() {
+    const candidates = [
+      '../data/facts.json', // relative from /modes/
+      '/data/facts.json', // absolute from site root
+      // attempt to derive repo-rooted path from location.pathname
+      (function(){
+        // remove last segment (file) and ensure root of repo
+        const path = location.pathname.replace(/\/modes\/.*$/, '');
+        return path + '/data/facts.json';
+      })(),
+      // GitHub raw-style path (fall back)
+      location.origin + '/VincentVanAltena/history-study-site/data/facts.json'
+    ];
+
+    for (const p of candidates) {
+      try {
+        const res = await fetch(p);
+        if (!res.ok) continue;
+        const json = await res.json();
+        console.log('Loaded facts.json from', p);
+        return json;
+      } catch (err) {
+        console.warn('Failed to fetch', p, err);
+      }
+    }
+    throw new Error('All fetch attempts failed');
+  }
+
   document.addEventListener('DOMContentLoaded', function () {
-    // load data (absolute path works when site served from repo root)
-    fetch('/data/facts.json')
-      .then(r => {
-        if (!r.ok) throw new Error('Failed to load facts.json: ' + r.status);
-        return r.json();
-      })
+    // load data using multiple fallbacks
+    tryLoadData()
       .then(json => {
         data = Array.isArray(json) ? json : [];
+        if (!data.length) console.warn('facts.json loaded but empty');
         showCard();
       })
       .catch(err => {
@@ -47,5 +72,11 @@
     const nextBtn = document.getElementById('next');
     if (showBtn) showBtn.addEventListener('click', showAnswer);
     if (nextBtn) nextBtn.addEventListener('click', nextCard);
+
+    // if page loaded with hash, auto-open
+    if (location.hash === '#flashcards') {
+      const startFc = document.getElementById('startFlashcards');
+      startFc && startFc.click();
+    }
   });
 })();
