@@ -34,6 +34,7 @@ function renderPerQuestionChart(stats) {
     options: {
       indexAxis: "y",
       responsive: true,
+      maintainAspectRatio: false,
       scales: {
         x: { beginAtZero: true }
       }
@@ -70,6 +71,7 @@ function renderOverTimeChart(history) {
     },
     options: {
       responsive: true,
+      maintainAspectRatio: false,
       scales: {
         y: { beginAtZero: true }
       }
