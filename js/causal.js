@@ -1,8 +1,34 @@
 // causal.js — Causaal Keten Quiz + Weergave
 
 (function () {
+  // ── Eigen localStorage-sleutels, los van adaptive_quiz ──────────────────────
+  const STATS_KEY   = "causal_stats";
+  const HISTORY_KEY = "causal_history";
+
+  function loadCausalStats() {
+    try { return JSON.parse(localStorage.getItem(STATS_KEY)) || {}; }
+    catch { return {}; }
+  }
+  function saveCausalStats(stats) {
+    localStorage.setItem(STATS_KEY, JSON.stringify(stats));
+  }
+  function logCausalHistory(correct) {
+    try {
+      const history = JSON.parse(localStorage.getItem(HISTORY_KEY) || "[]");
+      const today = new Date().toISOString().slice(0, 10);
+      let entry = history.find(h => h.date === today);
+      if (!entry) {
+        entry = { date: today, correct: 0, wrong: 0 };
+        history.push(entry);
+      }
+      if (correct) entry.correct++;
+      else entry.wrong++;
+      localStorage.setItem(HISTORY_KEY, JSON.stringify(history));
+    } catch (e) { /* ignore */ }
+  }
+  // ─────────────────────────────────────────────────────────────────────────────
+
   let facts = [];
-  // Alleen facts met minstens 1 cause en 1 effect zijn bruikbaar voor de quiz
   let usableFacts = [];
   let currentFact = null;
   let selectedCause = null;
@@ -20,9 +46,6 @@
     return a;
   }
 
-  // Voegt een array van strings samen tot 1 waarde.
-  // Bij >1 item: genummerd, elk op een eigen regel ("1. ...\n2. ...").
-  // Bij 1 item: gewoon de tekst zelf.
   function formatList(arr) {
     if (arr.length === 1) return arr[0];
     return arr.map((item, i) => `${i + 1}. ${item}`).join("\n");
@@ -54,12 +77,12 @@
 
     container.innerHTML = `
       <div class="causal-quiz-area">
-        <div class="causal-score-bar">
+        <div id="causal-question-area"></div>
+        <div id="causal-feedback" class="causal-feedback" style="display:none"></div>
+        <div class="causal-controls" style="display:flex; align-items:center; justify-content:space-between; margin-top:20px; gap:16px;">
           <span id="causal-score-text">Score: 0 / 0</span>
           <button id="causal-check-btn" disabled style="display:inline-flex">Controleer antwoord</button>
         </div>
-        <div id="causal-question-area"></div>
-        <div id="causal-feedback" class="causal-feedback" style="display:none"></div>
       </div>
       <hr style="margin:28px 0 16px">
       <h3 style="margin-bottom:12px">Alle causale ketens</h3>
@@ -83,13 +106,8 @@
 
     currentFact = usableFacts[Math.floor(Math.random() * usableFacts.length)];
 
-    // Juiste oorzaak: alle causes van dit fact, genummerd samengevoegd indien er meerdere zijn
     const correctCauseText = formatList(currentFact.context.causes);
-
-    // 2 foute oorzaken: de volledige causes-lijst van 2 andere, willekeurige facts
     const otherFactsForCauses = shuffle(usableFacts.filter(f => f.id !== currentFact.id)).slice(0, 2);
-
-    // Elke kaart krijgt een uniek cardId zodat identieke teksten elkaar niet kunnen overschrijven
     const causeCards = [
       { cardId: "cause-correct", text: correctCauseText, correct: true },
       ...otherFactsForCauses.map((f, i) => ({
@@ -100,12 +118,8 @@
     ];
     const displayCauses = shuffle(causeCards);
 
-    // Juiste gevolg: alle effects van dit fact, genummerd samengevoegd indien er meerdere zijn
     const correctEffectText = formatList(currentFact.context.effects);
-
-    // 2 foute gevolgen: de volledige effects-lijst van 2 andere, willekeurige facts
     const otherFactsForEffects = shuffle(usableFacts.filter(f => f.id !== currentFact.id)).slice(0, 2);
-
     const effectCards = [
       { cardId: "effect-correct", text: correctEffectText, correct: true },
       ...otherFactsForEffects.map((f, i) => ({
@@ -144,19 +158,11 @@
             </button>
           `).join("")}
         </div>
-
-        <div class="causal-arrow-row">
-          <div class="causal-arrow">↓</div>
-        </div>
-
+        <div class="causal-arrow-row"><div class="causal-arrow">↓</div></div>
         <div class="causal-event-row">
           <div class="causal-event-box">${escHtml(event)}</div>
         </div>
-
-        <div class="causal-arrow-row">
-          <div class="causal-arrow">↓</div>
-        </div>
-
+        <div class="causal-arrow-row"><div class="causal-arrow">↓</div></div>
         <div class="causal-row effects-row">
           ${effectCards.map(e => `
             <button class="causal-card effect-card" data-card-id="${e.cardId}" data-correct="${e.correct}">
@@ -167,7 +173,6 @@
       </div>
     `;
 
-    // Cause single-select
     area.querySelectorAll(".cause-card").forEach(btn => {
       btn.addEventListener("click", () => {
         area.querySelectorAll(".cause-card").forEach(b => b.classList.remove("selected"));
@@ -177,7 +182,6 @@
       });
     });
 
-    // Effect single-select
     area.querySelectorAll(".effect-card").forEach(btn => {
       btn.addEventListener("click", () => {
         area.querySelectorAll(".effect-card").forEach(b => b.classList.remove("selected"));
@@ -211,46 +215,65 @@
 
     if (allCorrect) score.correct++;
 
+    // Knopkleur-feedback (zelfde stijl als adaptive_quiz.js)
     document.querySelectorAll(".cause-card").forEach(btn => {
       btn.disabled = true;
-      if (btn.dataset.correct === "true") btn.classList.add("correct");
-      else if (btn.classList.contains("selected")) btn.classList.add("wrong");
+      if (btn.dataset.correct === "true") {
+        btn.style.background = "#bbf7d0";
+        btn.style.borderColor = "#22c55e";
+        btn.style.color = "#166534";
+      } else if (btn.classList.contains("selected")) {
+        btn.style.background = "#fee2e2";
+        btn.style.borderColor = "#ef4444";
+        btn.style.color = "#991b1b";
+      }
     });
 
     document.querySelectorAll(".effect-card").forEach(btn => {
       btn.disabled = true;
-      if (btn.dataset.correct === "true") btn.classList.add("correct");
-      else if (btn.classList.contains("selected")) btn.classList.add("wrong");
+      if (btn.dataset.correct === "true") {
+        btn.style.background = "#bbf7d0";
+        btn.style.borderColor = "#22c55e";
+        btn.style.color = "#166534";
+      } else if (btn.classList.contains("selected")) {
+        btn.style.background = "#fee2e2";
+        btn.style.borderColor = "#ef4444";
+        btn.style.color = "#991b1b";
+      }
     });
 
     const checkBtn = document.querySelector("#causal-check-btn");
-    if (checkBtn) {
-      checkBtn.disabled = true;
-      checkBtn.textContent = "Controleer antwoord";
-    }
+    if (checkBtn) checkBtn.disabled = true;
 
-    const stats = loadStats();
-    const questionKey = currentFact.event;
-    if (!stats[questionKey]) stats[questionKey] = { correct: 0, wrong: 0 };
-    if (allCorrect) stats[questionKey].correct++;
-    else stats[questionKey].wrong++;
-    saveStats(stats);
-    logHistory(allCorrect);
-
+    // Tekst-feedback (zelfde stijl als adaptive_quiz.js)
     const feedbackEl = document.getElementById("causal-feedback");
     if (feedbackEl) {
       feedbackEl.style.display = "block";
       if (allCorrect) {
-        feedbackEl.className = "causal-feedback feedback-correct";
-        feedbackEl.innerHTML = "Uitstekend! Oorzaak én gevolg kloppen.";
+        feedbackEl.style.color = "green";
+        feedbackEl.textContent = "Goed!";
       } else {
-        feedbackEl.className = "causal-feedback feedback-wrong";
-        let msg = "Niet helemaal. ";
-        if (!causeCorrect) msg += `De juiste oorzaak was: <em>${escHtml(currentCorrectCauseCard.text).split("\n").join("<br>")}</em>. `;
-        if (!effectCorrect) msg += `Het juiste gevolg was: <em>${escHtml(currentCorrectEffectCard.text).split("\n").join("<br>")}</em>.`;
-        feedbackEl.innerHTML = msg;
+        feedbackEl.style.color = "red";
+        let msg = "Fout — ";
+        if (!causeCorrect && !effectCorrect) {
+          msg += `de juiste oorzaak was: "${currentCorrectCauseCard.text.replace(/\n/g, "; ")}" en het juiste gevolg was: "${currentCorrectEffectCard.text.replace(/\n/g, "; ")}"`;
+        } else if (!causeCorrect) {
+          msg += `de juiste oorzaak was: "${currentCorrectCauseCard.text.replace(/\n/g, "; ")}"`;
+        } else {
+          msg += `het juiste gevolg was: "${currentCorrectEffectCard.text.replace(/\n/g, "; ")}"`;
+        }
+        feedbackEl.textContent = msg;
       }
     }
+
+    // Stats wegschrijven naar eigen causal-sleutels
+    const stats = loadCausalStats();
+    const questionKey = currentFact.event;
+    if (!stats[questionKey]) stats[questionKey] = { correct: 0, wrong: 0 };
+    if (allCorrect) stats[questionKey].correct++;
+    else stats[questionKey].wrong++;
+    saveCausalStats(stats);
+    logCausalHistory(allCorrect);
 
     document.getElementById("causal-score-text").textContent = `Score: ${score.correct} / ${score.total}`;
     setTimeout(startQuiz, allCorrect ? 900 : 1800);

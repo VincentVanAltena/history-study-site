@@ -20,8 +20,8 @@ function renderPerQuestionChart(stats) {
     data: {
       labels,
       datasets: [
-        { label: "Goed", data: correct, backgroundColor: "rgba(75, 192, 192, 0.6)" },
-        { label: "Fout", data: wrong,   backgroundColor: "rgba(255, 99, 132, 0.6)" }
+        { label: "Correct", data: correct, backgroundColor: "rgba(75, 192, 192, 0.6)" },
+        { label: "Wrong", data: wrong,   backgroundColor: "rgba(255, 99, 132, 0.6)" }
       ]
     },
     options: {
@@ -52,8 +52,8 @@ function renderOverTimeChart(history) {
     data: {
       labels,
       datasets: [
-        { label: "Goed", data: correct, borderColor: "green", fill: false },
-        { label: "Fout", data: wrong,   borderColor: "red",   fill: false }
+        { label: "Correct", data: correct, borderColor: "green", fill: false },
+        { label: "Wrong", data: wrong,   borderColor: "red",   fill: false }
       ]
     },
     options: {
