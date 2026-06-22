@@ -54,9 +54,18 @@ const questionEl  = document.getElementById("question");
 const feedbackEl  = document.getElementById("feedback");
 
 // Quiz starten
-document.getElementById("startQuiz").addEventListener("click", () => {
-  document.getElementById("quizContainer").style.display = "block";
-  startQuiz();
+const startQuizBtn = document.getElementById("startQuiz");
+if (startQuizBtn) {
+  startQuizBtn.addEventListener("click", () => {
+    document.getElementById("quizContainer").style.display = "block";
+    startQuiz();
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const quizContainer = document.getElementById("quizContainer");
+  if (quizContainer) quizContainer.style.display = "block";
+  if (typeof startQuiz === "function") startQuiz();
 });
 
 function startQuiz() {

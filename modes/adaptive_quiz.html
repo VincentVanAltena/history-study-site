@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz modus</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<main class="container">
+  <a href="../index.html" class="back-link">← Terug</a>
+  <h1>Quiz modus</h1>
+
+<!-- Quiz container -->
+<div id="quizContainer" style="display:none; margin-top:16px;">
+  <h2 id="question"></h2>
+  <!-- #choicesContainer wordt hier dynamisch ingevoegd door adaptive_quiz.js -->
+  <p id="feedback" style="margin-top:8px; font-weight:600;"></p>
+</div>
+
+  <div id="contextPanel" class="context-panel" style="display:none; margin-top:16px;">
+    <h2>Context</h2>
+    <div id="contextContent"></div>
+  </div>
+</main>
+
+<script src="../js/utils.js"></script>
+<script src="../js/adaptive_quiz.js"></script>
+<script>  
+    const startFc = document.getElementById('startFlashcards');
+    document.getElementById('quizContainer').style.display = 'block';
+</script>
+</body>
+</html>
