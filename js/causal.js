@@ -7,6 +7,8 @@
   let currentFact = null;
   let selectedCause = null;
   let selectedEffect = null;
+  let currentCorrectCauseCard = null;
+  let currentCorrectEffectCard = null;
   let score = { correct: 0, total: 0 };
 
   function shuffle(arr) {
@@ -38,6 +40,7 @@
         );
         renderQuizSection();
         renderOverview();
+        startQuiz();
       })
       .catch(err => {
         const div = document.getElementById("causal");
@@ -53,21 +56,25 @@
       <div class="causal-quiz-area">
         <div class="causal-score-bar">
           <span id="causal-score-text">Score: 0 / 0</span>
-          <button id="causal-next-btn" style="display:none">Volgende vraag →</button>
+          <button id="causal-check-btn" disabled style="display:inline-flex">Controleer antwoord</button>
         </div>
         <div id="causal-question-area"></div>
         <div id="causal-feedback" class="causal-feedback" style="display:none"></div>
-        <div class="causal-start-wrap">
-          <button id="causal-start-btn">▶ Start Causale Quiz</button>
-        </div>
       </div>
       <hr style="margin:28px 0 16px">
       <h3 style="margin-bottom:12px">Alle causale ketens</h3>
       <div id="causal-overview"></div>
     `;
 
-    document.getElementById("causal-start-btn").addEventListener("click", startQuiz);
-    document.getElementById("causal-next-btn").addEventListener("click", startQuiz);
+    const checkBtn = document.getElementById("causal-check-btn");
+    if (checkBtn) {
+      checkBtn.addEventListener("click", () => {
+        if (checkBtn.disabled) return;
+        if (currentCorrectCauseCard && currentCorrectEffectCard) {
+          checkAnswer(currentCorrectCauseCard, currentCorrectEffectCard);
+        }
+      });
+    }
   }
 
   function startQuiz() {
@@ -111,9 +118,14 @@
 
     renderQuestion(displayCauses, currentFact.event, displayEffects);
 
-    document.getElementById("causal-start-btn").style.display = "none";
-    document.getElementById("causal-next-btn").style.display = "none";
-    document.getElementById("causal-feedback").style.display = "none";
+    const checkBtn = document.getElementById("causal-check-btn");
+    if (checkBtn) {
+      checkBtn.style.display = "inline-flex";
+      checkBtn.disabled = true;
+      checkBtn.textContent = "Controleer antwoord";
+    }
+    const feedbackEl = document.getElementById("causal-feedback");
+    if (feedbackEl) feedbackEl.style.display = "none";
   }
 
   function renderQuestion(causeCards, event, effectCards) {
@@ -153,9 +165,6 @@
           `).join("")}
         </div>
       </div>
-      <div style="text-align:center;margin-top:14px">
-        <button id="causal-check-btn" disabled>Controleer antwoord</button>
-      </div>
     `;
 
     // Cause single-select
@@ -178,11 +187,14 @@
       });
     });
 
-    const correctCauseCard = causeCards.find(c => c.correct);
-    const correctEffectCard = effectCards.find(e => e.correct);
-    area.querySelector("#causal-check-btn").addEventListener("click", () =>
-      checkAnswer(correctCauseCard, correctEffectCard)
-    );
+    currentCorrectCauseCard = causeCards.find(c => c.correct);
+    currentCorrectEffectCard = effectCards.find(e => e.correct);
+    const checkBtn = document.getElementById("causal-check-btn");
+    if (checkBtn) {
+      checkBtn.disabled = true;
+      checkBtn.style.display = "inline-flex";
+      checkBtn.textContent = "Controleer antwoord";
+    }
   }
 
   function updateCheckBtn() {
@@ -211,23 +223,37 @@
       else if (btn.classList.contains("selected")) btn.classList.add("wrong");
     });
 
-    document.querySelector("#causal-check-btn").disabled = true;
+    const checkBtn = document.querySelector("#causal-check-btn");
+    if (checkBtn) {
+      checkBtn.disabled = true;
+      checkBtn.textContent = "Controleer antwoord";
+    }
+
+    const stats = loadStats();
+    const questionKey = currentFact.event;
+    if (!stats[questionKey]) stats[questionKey] = { correct: 0, wrong: 0 };
+    if (allCorrect) stats[questionKey].correct++;
+    else stats[questionKey].wrong++;
+    saveStats(stats);
+    logHistory(allCorrect);
 
     const feedbackEl = document.getElementById("causal-feedback");
-    feedbackEl.style.display = "block";
-    if (allCorrect) {
-      feedbackEl.className = "causal-feedback feedback-correct";
-      feedbackEl.innerHTML = "Uitstekend! Oorzaak én gevolg kloppen.";
-    } else {
-      feedbackEl.className = "causal-feedback feedback-wrong";
-      let msg = "Niet helemaal. ";
-      if (!causeCorrect) msg += `De juiste oorzaak was: <em>${escHtml(correctCauseCard.text).split("\n").join("<br>")}</em>. `;
-      if (!effectCorrect) msg += `Het juiste gevolg was: <em>${escHtml(correctEffectCard.text).split("\n").join("<br>")}</em>.`;
-      feedbackEl.innerHTML = msg;
+    if (feedbackEl) {
+      feedbackEl.style.display = "block";
+      if (allCorrect) {
+        feedbackEl.className = "causal-feedback feedback-correct";
+        feedbackEl.innerHTML = "Uitstekend! Oorzaak én gevolg kloppen.";
+      } else {
+        feedbackEl.className = "causal-feedback feedback-wrong";
+        let msg = "Niet helemaal. ";
+        if (!causeCorrect) msg += `De juiste oorzaak was: <em>${escHtml(currentCorrectCauseCard.text).split("\n").join("<br>")}</em>. `;
+        if (!effectCorrect) msg += `Het juiste gevolg was: <em>${escHtml(currentCorrectEffectCard.text).split("\n").join("<br>")}</em>.`;
+        feedbackEl.innerHTML = msg;
+      }
     }
 
     document.getElementById("causal-score-text").textContent = `Score: ${score.correct} / ${score.total}`;
-    document.getElementById("causal-next-btn").style.display = "inline-flex";
+    setTimeout(startQuiz, allCorrect ? 900 : 1800);
   }
 
   function renderOverview() {
