@@ -62,7 +62,6 @@
           Array.isArray(f.context.effects) && f.context.effects.length > 0
         );
         renderQuizSection();
-        renderOverview();
         startQuiz();
       })
       .catch(err => {
@@ -84,9 +83,6 @@
           <button id="causal-check-btn" disabled style="display:inline-flex">Controleer antwoord</button>
         </div>
       </div>
-      <hr style="margin:28px 0 16px">
-      <h3 style="margin-bottom:12px">Alle causale ketens</h3>
-      <div id="causal-overview"></div>
     `;
 
     const checkBtn = document.getElementById("causal-check-btn");
@@ -136,7 +132,7 @@
     if (checkBtn) {
       checkBtn.style.display = "inline-flex";
       checkBtn.disabled = true;
-      checkBtn.textContent = "Controleer antwoord";
+      checkBtn.textContent = "Check answer";
     }
     const feedbackEl = document.getElementById("causal-feedback");
     if (feedbackEl) feedbackEl.style.display = "none";
@@ -147,9 +143,7 @@
     if (!area) return;
 
     area.innerHTML = `
-      <p class="causal-instruction">
-        Kies de <strong>juiste oorzaak</strong> en het <strong>juiste gevolg</strong>:
-      </p>
+
       <div class="causal-diagram">
         <div class="causal-row causes-row">
           ${causeCards.map(c => `
@@ -277,18 +271,6 @@
 
     document.getElementById("causal-score-text").textContent = `Score: ${score.correct} / ${score.total}`;
     setTimeout(startQuiz, allCorrect ? 900 : 1800);
-  }
-
-  function renderOverview() {
-    const div = document.getElementById("causal-overview");
-    if (!div) return;
-    div.innerHTML = usableFacts.map(f => `
-      <div class="causal-overview-block">
-        <h4>${escHtml(f.event)}</h4>
-        <p><strong>Oorzaken:</strong><br>${escHtml(formatList(f.context.causes)).split("\n").join("<br>")}</p>
-        <p><strong>Gevolgen:</strong><br>${escHtml(formatList(f.context.effects)).split("\n").join("<br>")}</p>
-      </div>
-    `).join("");
   }
 
   function escHtml(str) {

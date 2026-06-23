@@ -33,9 +33,8 @@ h1 {
 .menu a {
   display: flex;
   align-items: center;
-  padding: 16px;
-  background: white;
-  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
   text-decoration: none;
   font-size: clamp(1rem, 2.5vw, 1.2rem);
   color: inherit;
@@ -84,6 +83,40 @@ h1 {
   overflow: hidden;
   box-shadow: 0 2px 6px rgba(0,0,0,0.06);
   margin-bottom: 12px;
+}
+
+.map-feature-label {
+  background: rgba(255, 255, 255, 0.95);
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.leaflet-popup-content-wrapper {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.leaflet-popup-tip {
+  background: #ffffff;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px;
+  color: #111;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.leaflet-popup-content strong {
+  display: block;
+  margin-bottom: 4px;
 }
 
 #big {
