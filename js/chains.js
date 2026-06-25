@@ -15,8 +15,7 @@
   }
 
   function loadCausal() {
-    fetch("../data/facts.json")
-      .then(r => r.json())
+    loadFactsData()
       .then(data => {
         facts = data.filter(f =>
           f.context &&

@@ -46,28 +46,8 @@
     showCard();
   }
 
-  async function tryLoadData() {
-    const candidates = [
-      '../data/facts.json',
-      '/data/facts.json',
-    ];
-
-    for (const p of candidates) {
-      try {
-        const res = await fetch(p);
-        if (!res.ok) continue;
-        const json = await res.json();
-        console.log('Loaded facts.json from', p);
-        return json;
-      } catch (err) {
-        console.warn('Failed to fetch', p, err);
-      }
-    }
-    throw new Error('All fetch attempts failed');
-  }
-
   document.addEventListener('DOMContentLoaded', function () {
-    tryLoadData()
+    loadFactsData()
       .then(json => {
         data = Array.isArray(json) ? json : [];
         if (!data.length) console.warn('facts.json loaded but empty');

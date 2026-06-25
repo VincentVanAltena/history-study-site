@@ -1,0 +1,73 @@
+// dataSource.js — Upload-je-eigen-onderwerp UI op index.html
+// Vereist utils.js (loadFactsData, setCustomFactsData, clearCustomFactsData,
+// hasCustomFactsData, getCustomFactsName, validateFactsJson).
+
+(function () {
+  function refreshStatus() {
+    const statusEl = document.getElementById("dataSourceStatus");
+    if (!statusEl) return;
+    const name = getCustomFactsName();
+    if (hasCustomFactsData()) {
+      statusEl.textContent = `Actief: eigen bestand${name ? ` (${name})` : ""}.`;
+      statusEl.style.color = "#166534";
+    } else {
+      statusEl.textContent = "Actief: standaard onderwerp (kerkgeschiedenis).";
+      statusEl.style.color = "#444";
+    }
+  }
+
+  function showError(msg) {
+    const el = document.getElementById("dataSourceError");
+    if (!el) return;
+    if (!msg) {
+      el.style.display = "none";
+      el.textContent = "";
+    } else {
+      el.style.display = "block";
+      el.textContent = msg;
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    refreshStatus();
+
+    const input    = document.getElementById("factsUpload");
+    const resetBtn = document.getElementById("useDefaultData");
+
+    if (input) {
+      input.addEventListener("change", e => {
+        const file = e.target.files[0];
+        if (!file) return;
+        showError(null);
+
+        const reader = new FileReader();
+        reader.onload = () => {
+          let parsed;
+          try {
+            parsed = JSON.parse(reader.result);
+          } catch (err) {
+            showError("Kon bestand niet lezen: ongeldig JSON-formaat.");
+            return;
+          }
+          const error = validateFactsJson(parsed);
+          if (error) {
+            showError(error);
+            return;
+          }
+          setCustomFactsData(parsed, file.name);
+          refreshStatus();
+        };
+        reader.readAsText(file);
+        input.value = "";
+      });
+    }
+
+    if (resetBtn) {
+      resetBtn.addEventListener("click", () => {
+        clearCustomFactsData();
+        showError(null);
+        refreshStatus();
+      });
+    }
+  });
+})();

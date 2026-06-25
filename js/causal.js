@@ -52,8 +52,7 @@
   }
 
   function loadCausal() {
-    fetch("../data/facts.json")
-      .then(r => r.json())
+    loadFactsData()
       .then(data => {
         facts = data;
         usableFacts = facts.filter(f =>
@@ -61,6 +60,11 @@
           Array.isArray(f.context.causes) && f.context.causes.length > 0 &&
           Array.isArray(f.context.effects) && f.context.effects.length > 0
         );
+        if (usableFacts.length < 3) {
+          const div = document.getElementById("causal");
+          if (div) div.innerHTML = `<p style="color:#c00">Deze dataset heeft te weinig items met oorzaak/gevolg-informatie voor deze oefening.</p>`;
+          return;
+        }
         renderQuizSection();
         startQuiz();
       })

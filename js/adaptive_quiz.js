@@ -69,8 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function startQuiz() {
-  fetch("../data/facts.json")
-    .then(r => r.json())
+  loadFactsData()
     .then(json => {
       QUIZ_DATA = json;
       nextQuestion();

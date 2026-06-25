@@ -28,6 +28,26 @@
   <div style="height:250px;">
     <canvas id="overTimeChart"></canvas>
   </div>
+
+  <h2>Connections</h2>
+  <p id="connectionsEmpty" class="empty-state" style="display:none;">
+    No Connections sessions have been registered yet. <a href="connections.html">Try Connections!</a>
+  </p>
+  <div style="height:250px;">
+    <canvas id="connectionsChart"></canvas>
+  </div>
+
+  <h2 style="margin-top:32px;">Data management</h2>
+  <p style="font-size:0.9rem;color:#666;margin:-4px 0 12px">
+    Purge clears all progress in this browser. Save downloads a backup file; Load restores progress from such a file.
+  </p>
+  <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+    <button id="purgeProgressBtn">Purge progress</button>
+    <button id="saveProgressBtn">Save progress to file</button>
+    <button id="loadProgressBtn" type="button" onclick="document.getElementById('loadProgressInput').click()">Load progress from file</button>
+    <input type="file" id="loadProgressInput" accept="application/json,.json" style="display:none;">
+  </div>
+  <p id="progressStatus" style="margin-top:10px; font-weight:600;"></p>
 </main>
 
 <script src="../js/utils.js"></script>

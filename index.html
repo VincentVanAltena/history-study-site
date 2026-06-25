@@ -20,7 +20,25 @@
     <a href="modes/progress.html">Progress</a> 
     <a href="modes/experimental.html">Experimental</a>
   </nav>
+
+  <section class="data-source" style="margin-top:32px; padding:16px; border:1px solid #ddd; border-radius:8px;">
+    <h2 style="margin-top:0;">Own subject</h2>
+    <p style="font-size:0.9rem;color:#555;">
+      Upload your own <code>facts.json</code> file to point every exercise (flashcards, quiz,
+      causal chains, connections) at a different subject. Each item needs at least a
+      <code>question</code> and <code>answer</code> field; for the causal exercises, also include
+      <code>event</code> and <code>context.causes</code> / <code>context.effects</code>.
+    </p>
+    <p id="dataSourceStatus" style="font-weight:600;"></p>
+    <p id="dataSourceError" style="color:#c00; font-weight:600; display:none;"></p>
+    <div style="display:flex; flex-wrap:wrap; gap:8px; align-items:center;">
+      <input type="file" id="factsUpload" accept="application/json,.json">
+      <button id="useDefaultData" type="button">Use default subject</button>
+    </div>
+  </section>
 </main>
 
+<script src="js/utils.js"></script>
+<script src="js/dataSource.js"></script>
 </body>
 </html>
