@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Learning mode</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ── Data-source sectie ───────────────────────────────────────────── */
+    .ds-section {
+      margin-top: 32px;
+      background: #fff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 20px 24px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+    }
+
+    .ds-section h2 {
+      margin: 0 0 4px;
+      font-size: 1.05rem;
+    }
+
+    .ds-intro {
+      font-size: 0.88rem;
+      color: #555;
+      margin: 0 0 18px;
+    }
+
+    .ds-intro code {
+      background: #f3f4f6;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-size: 0.85em;
+    }
+
+    /* Elke rij = één bestandstype */
+    .ds-row {
+      display: grid;
+      grid-template-columns: 160px 1fr auto;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .ds-row:last-child { border-bottom: none; }
+
+    .ds-label {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #374151;
+    }
+
+    .ds-middle {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .ds-status {
+      font-size: 0.83rem;
+      font-weight: 500;
+    }
+
+    .ds-status--default { color: #6b7280; }
+    .ds-status--custom  { color: #166534; }
+
+    .ds-error {
+      font-size: 0.82rem;
+      color: #b91c1c;
+      display: none;
+    }
+
+    .ds-file-input {
+      font-size: 0.82rem;
+      color: #374151;
+    }
+
+    .ds-reset {
+      font-size: 0.78rem;
+      padding: 6px 12px;
+      min-height: 32px;
+      white-space: nowrap;
+      background: #f9fafb;
+      border-color: #d1d5db;
+      color: #374151;
+    }
+
+    .ds-reset:hover { background: #f3f4f6; }
+
+    @media (max-width: 600px) {
+      .ds-row {
+        grid-template-columns: 1fr;
+      }
+      .ds-reset { width: fit-content; }
+    }
+  </style>
+</head>
+<body>
+
+<main class="container">
+  <h1>Learning mode</h1>
+
+  <nav class="menu" aria-label="Leermenu">
+    <a href="modes/flashcards.html">Flashcards</a>
+    <a href="modes/adaptive_quiz.html">Quiz</a>
+    <a href="modes/connections.html">Connections</a>
+    <a href="modes/progress.html">Progress</a>
+    <a href="modes/experimental.html">Experimental</a>
+  </nav>
+
+  <!-- ── Bestandskiezer ─────────────────────────────────────────────── -->
+  <section class="ds-section" aria-label="Eigen bestanden uploaden">
+    <h2>Eigen bestanden</h2>
+    <p class="ds-intro">
+      Upload één of meerdere eigen JSON-bestanden om de oefeningen op een ander onderwerp in te stellen.
+      Elk bestandstype is onafhankelijk: je kunt bijv. alleen de vragen vervangen en de standaard tijdlijn behouden.
+      Klik op <strong>Herstel standaard</strong> om een type terug te zetten.
+      Bestanden worden lokaal opgeslagen; je hoeft niet elke sessie opnieuw te uploaden.
+    </p>
+
+    <!-- Facts -->
+    <div class="ds-row">
+      <span class="ds-label">Vragen<br><code>facts.json</code></span>
+      <div class="ds-middle">
+        <span class="ds-status" id="statusFacts"></span>
+        <span class="ds-error"  id="errorFacts"></span>
+        <input class="ds-file-input" type="file" id="factsUpload" accept="application/json,.json">
+      </div>
+      <button class="ds-reset" id="useDefaultFacts" type="button">Herstel standaard</button>
+    </div>
+
+    <!-- Timeline -->
+    <div class="ds-row">
+      <span class="ds-label">Tijdlijn<br><code>timeline.json</code></span>
+      <div class="ds-middle">
+        <span class="ds-status" id="statusTimeline"></span>
+        <span class="ds-error"  id="errorTimeline"></span>
+        <input class="ds-file-input" type="file" id="timelineUpload" accept="application/json,.json">
+      </div>
+      <button class="ds-reset" id="useDefaultTimeline" type="button">Herstel standaard</button>
+    </div>
+
+    <!-- Glossary -->
+    <div class="ds-row">
+      <span class="ds-label">Woordenlijst<br><code>glossary.json</code></span>
+      <div class="ds-middle">
+        <span class="ds-status" id="statusGlossary"></span>
+        <span class="ds-error"  id="errorGlossary"></span>
+        <input class="ds-file-input" type="file" id="glossaryUpload" accept="application/json,.json">
+      </div>
+      <button class="ds-reset" id="useDefaultGlossary" type="button">Herstel standaard</button>
+    </div>
+
+  </section>
+</main>
+
+<script src="js/utils.js"></script>
+<script src="js/datasource.js"></script>
+</body>
+</html>

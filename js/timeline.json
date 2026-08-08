@@ -1,0 +1,16 @@
+[
+  {
+    "id": "early_christianity",
+    "start": 30,
+    "end": 100,
+    "title": "Oorsprong en vroege verspreiding van het christendom",
+    "group": "Vroege Kerk"
+  },
+  {
+    "id": "paul_missions",
+    "start": 45,
+    "end": 65,
+    "title": "Missionaire reizen van Paulus",
+    "group": "Vroege Kerk"
+  }
+]

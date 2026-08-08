@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experimental</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vis-timeline@7.4.9/dist/vis-timeline-graph2d.min.css" integrity="sha256-meyyOFDs+nCo6swLtzxmFqdcL5fkSfe/9EGyGxqSQmo=" crossorigin="">
+  <style>
+    .glossary-list { margin-top: 8px; }
+    .glossary-entry {
+      background: #fff;
+      border-radius: 8px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      border-left: 3px solid #2563eb;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .glossary-entry h3 { margin: 0 0 4px; font-size: 0.95rem; color: #1e40af; }
+    .glossary-entry p  { margin: 0 0 4px; font-size: 0.88rem; color: #374151; }
+    .glossary-entry em { font-size: 0.8rem; color: #888; }
+  </style>
+</head>
+<body>
+
+<main class="container">
+  <a href="../index.html" class="back-link">← Back</a>
+  <h1>Experimental</h1>
+
+  <!-- 1. Tijdlijn -->
+  <h2>Tijdlijn</h2>
+  <p style="font-size:0.88rem;color:#666;margin:-4px 0 10px">Scroll en zoom om door de tijdlijn te navigeren.</p>
+  <div id="timeline"></div>
+
+  <!-- 2. Kaart -->
+  <h2 style="margin-top:24px">Kaart</h2>
+  <div id="map"></div>
+
+  <!-- 3. Woordenlijst -->
+  <h2 style="margin-top:24px">Woordenlijst</h2>
+  <div id="glossary"></div>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://cdn.jsdelivr.net/npm/vis-timeline@7.4.9/dist/vis-timeline-graph2d.min.js" integrity="sha256-agfOCSC6BGv4gGu8aHt1UycGlgL4FRWtH79N70HP5ng=" crossorigin=""></script>
+<script src="../js/utils.js"></script>
+<script src="../js/timeline.js"></script>
+<script src="../js/map.js"></script>
+<script src="../js/causal.js"></script>
+<script src="../js/glossary.js"></script>
+</body>
+</html>

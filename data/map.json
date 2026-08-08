@@ -1,0 +1,122 @@
+[
+  {
+    "name": "palestine_1st_century",
+    "type": "polygon",
+    "coords": [[33.0, 35.0], [31.0, 35.5], [30.5, 34.5]],
+    "period": "1e eeuw"
+  },
+  {
+    "name": "pauline_routes",
+    "type": "polyline",
+    "coords": [[36.917, 34.892], [37.0, 27.0], [40.6, 22.9]],
+    "period": "1e eeuw"
+  },
+  {
+    "name": "alexandria_center",
+    "type": "point",
+    "coords": [31.2001, 29.9187],
+    "period": "2e–5e eeuw"
+  },
+  {
+    "name": "antioch_center",
+    "type": "point",
+    "coords": [36.2, 36.1],
+    "period": "1e–5e eeuw"
+  },
+  {
+    "name": "carthage_region",
+    "type": "point",
+    "coords": [36.8529, 10.3231],
+    "period": "2e–5e eeuw"
+  },
+  {
+    "name": "rome_center",
+    "type": "point",
+    "coords": [41.9028, 12.4964],
+    "period": "1e–5e eeuw"
+  },
+  {
+    "name": "constantinople_center",
+    "type": "point",
+    "coords": [41.0082, 28.9784],
+    "period": "4e–15e eeuw"
+  },
+  {
+    "name": "nicea_council",
+    "type": "point",
+    "coords": [40.4267, 29.7211],
+    "period": "325"
+  },
+  {
+    "name": "hippo_region",
+    "type": "point",
+    "coords": [36.9000, 7.7667],
+    "period": "4e–5e eeuw"
+  },
+  {
+    "name": "paris_university",
+    "type": "point",
+    "coords": [48.8566, 2.3522],
+    "period": "12e eeuw"
+  },
+  {
+    "name": "bologna_university",
+    "type": "point",
+    "coords": [44.4949, 11.3426],
+    "period": "11e eeuw"
+  },
+  {
+    "name": "oxford_university",
+    "type": "point",
+    "coords": [51.7520, -1.2577],
+    "period": "12e eeuw"
+  },
+  {
+    "name": "wittenberg",
+    "type": "point",
+    "coords": [51.866, 12.649],
+    "period": "16e eeuw"
+  },
+  {
+    "name": "geneva_reformation",
+    "type": "point",
+    "coords": [46.2044, 6.1432],
+    "period": "16e eeuw"
+  },
+  {
+    "name": "zurich_reformation",
+    "type": "point",
+    "coords": [47.3769, 8.5417],
+    "period": "16e eeuw"
+  },
+  {
+    "name": "trento_council",
+    "type": "point",
+    "coords": [46.0700, 11.1211],
+    "period": "1545–1563"
+  },
+  {
+    "name": "azusa_street",
+    "type": "point",
+    "coords": [34.0430, -118.2470],
+    "period": "1906"
+  },
+  {
+    "name": "berlin_theology",
+    "type": "point",
+    "coords": [52.5200, 13.4050],
+    "period": "19e eeuw"
+  },
+  {
+    "name": "oxford_movement",
+    "type": "point",
+    "coords": [51.7520, -1.2577],
+    "period": "19e eeuw"
+  },
+  {
+    "name": "latin_america_liberation",
+    "type": "polygon",
+    "coords": [[-15.0, -47.9], [-12.0, -77.0], [-34.6, -58.4]],
+    "period": "20e eeuw"
+  }
+]
